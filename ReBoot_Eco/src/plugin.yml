@@ -1,0 +1,13 @@
+name: ReBootEco
+main: com.skyandforest.reboot_eco.Eco
+version: 18.31.3.19
+load: STARTUP
+commands:
+  eco:
+    description: Working with player balance
+    usage: /<command> [add|set <currensy> <amount>]
+    aliases: [b, bal, balance, money, и, ифд, ифдфтсу, ьщтун]
+  pay:
+    description: Совершить перевод денег другому игроку
+    usage: /<command> <player> <amount(В меди)>
+    aliases: [pay, зфн]

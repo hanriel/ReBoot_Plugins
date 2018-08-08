@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ReBoot_Eco:jar">
+    <output-path>F:/ReBoot/SAF — копия/plugins</output-path>
+    <root id="archive" name="MedievalEco.jar">
+      <element id="module-output" name="ReBoot_Eco" />
+      <element id="module-output" name="ReBoot_Core" />
+    </root>
+  </artifact>
+</component>

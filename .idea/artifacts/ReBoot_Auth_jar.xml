@@ -1,0 +1,7 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ReBoot_Auth:jar">
+    <root id="archive" name="ReBoot_Auth.jar">
+      <element id="module-output" name="ReBoot_Auth" />
+    </root>
+  </artifact>
+</component>

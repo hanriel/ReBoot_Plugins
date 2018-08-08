@@ -1,0 +1,9 @@
+name: ReBootEco
+main: com.saf.medievaleco.Eco
+version: 18.30.6.1
+load: STARTUP
+commands:
+  eco:
+    description: Working with player balance
+    usage: /<command> [add|set <currensy> <amount>]
+    aliases: [b, bal, balance, money, и, ифд, ифдфтсу, ьщтун]

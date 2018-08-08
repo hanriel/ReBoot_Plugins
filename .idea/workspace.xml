@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ReBoot_Eco:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutomaticModuleUnloader">
+    <loaded-modules>
+      <module name="MedievalCore" />
+      <module name="MedievalNPC" />
+      <module name="MedievalGUI" />
+    </loaded-modules>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="86466175-c029-48a7-9ae7-bbe0c40a3ef0" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/Eco.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/Eco.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1533706939">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.rebase" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open" />
+      <usages-collector id="statistics.file.types.open" />
+      <usages-collector id="statistics.file.types.edit" />
+      <usages-collector id="statistics.file.extensions.edit" />
+      <usages-collector id="statistics.js.language.service.starts" />
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="BukkitDev" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="156">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/Eco.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="method#onEnable#0;class#Eco#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/command/EcoCommandHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1680">
+              <caret line="114" selection-start-line="114" selection-end-line="114" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/command/PayCommandHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MedievalCore/src/com/saf/medievalcore/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="617">
+              <caret line="62" column="1" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/plugin.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>a</find>
+      <find>var4</find>
+      <find>ServerListPingEvent</find>
+      <find>onE</find>
+      <find>getConsol</find>
+      <find>logger</find>
+      <find>getLo</find>
+      <find>Float.parseFloat(args[5])</find>
+      <find>Float.parseFloat(args[4])</find>
+      <find>0.5</find>
+      <find>npcs</find>
+      <find>length</find>
+      <find>&amp;4</find>
+      <find>&amp;2</find>
+      <find>Complite!</find>
+      <find />
+      <find>com.gmail.filoghost.chestcommands.</find>
+      <find>getLang</find>
+      <find>Auth</find>
+      <find>close</find>
+      <find>nextPage</find>
+      <find>label</find>
+      <find>reboot_Shop</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>0.5</replace>
+      <replace>(float)0.5</replace>
+      <replace>&amp;c</replace>
+      <replace>&amp;a</replace>
+      <replace />
+      <replace>com.skyandforest.reboot_auth.</replace>
+      <replace>Shop</replace>
+      <replace>rb_Shop</replace>
+      <replace>reboot_auth</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="github/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/rb_shop/config/Settings.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/rb_shop/config/Lang.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/rb_shop/command/CommandHandler.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Shop/resources/plugin.yml" />
+        <option value="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/config/Lang.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/command/CommandHandler.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/ShopMenu.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/bridge/EconomyBridge.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/EconomyBridge.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/Shop.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Dungeons/src/com/skyandforest/reboot_dungeons/task/ErrorLoggerTask.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Dungeons/src/com/skyandforest/reboot_dungeons/Shop.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Dungeons/resources/plugin.yml" />
+        <option value="$PROJECT_DIR$/ReBoot_Dungeons/src/com/skyandforest/reboot_dungeons/Dungeons.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Dungeons/src/com/skyandforest/reboot_dungeons/_Listener.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Dungeons/src/com/skyandforest/reboot_dungeons/BlockSave.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/config/yaml/SpecialConfig.java" />
+        <option value="$PROJECT_DIR$/MedievalEco/src/com/saf/medievaleco/config/YAML/PluginConfig.java" />
+        <option value="$PROJECT_DIR$/MedievalEco/src/com/saf/medievaleco/config/YAML/SpecialConfig.java" />
+        <option value="$PROJECT_DIR$/MedievalCore/src/com/saf/medievalcore/Log.java" />
+        <option value="$PROJECT_DIR$/MedievalCore/src/com/saf/medievalcore/_CommandExecutor.java" />
+        <option value="$PROJECT_DIR$/MedievalEco/src/com/saf/medievaleco/config/Settings.java" />
+        <option value="$PROJECT_DIR$/MedievalEco/src/com/saf/medievaleco/config/Lang.java" />
+        <option value="$PROJECT_DIR$/MedievalCore/src/com/saf/medievalcore/ErrorLogger.java" />
+        <option value="$PROJECT_DIR$/MedievalCore/src/com/saf/medievalcore/CommandHandler.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/task/ErrorLoggerTask.java" />
+        <option value="$PROJECT_DIR$/MedievalCore/src/com/saf/medievalcore/ErrorLoggerTask.java" />
+        <option value="$PROJECT_DIR$/MedievalCore/src/com/saf/medievalcore/Utils.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/Auth.java" />
+        <option value="$PROJECT_DIR$/MedievalCore/src/plugin.yml" />
+        <option value="$PROJECT_DIR$/MedievalCore/src/com/saf/medievalcore/Catcher.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/config/Lang.java" />
+        <option value="$PROJECT_DIR$/MedievalEco/src/com/saf/medievaleco/Eco.java" />
+        <option value="$PROJECT_DIR$/MedievalEco/src/com/saf/medievaleco/Permissions.java" />
+        <option value="$PROJECT_DIR$/MedievalEco/src/com/saf/medievaleco/CommandHandler.java" />
+        <option value="$PROJECT_DIR$/MedievalCore/src/com/saf/medievalcore/CommandFramework.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Dungeons/src/com/skyandforest/reboot_dungeons/Utils.java" />
+        <option value="$PROJECT_DIR$/MedievalEco/src/plugin.yml" />
+        <option value="$PROJECT_DIR$/MedievalEco/src/com/skyandforest/reboot_eco/Permissions.java" />
+        <option value="$PROJECT_DIR$/MedievalEco/src/com/skyandforest/reboot_eco/CommandHandler.java" />
+        <option value="$PROJECT_DIR$/MedievalEco/src/com/skyandforest/reboot_eco/config/Lang.java" />
+        <option value="$PROJECT_DIR$/MedievalEco/src/com/skyandforest/reboot_eco/config/Settings.java" />
+        <option value="$PROJECT_DIR$/MedievalEco/src/com/skyandforest/reboot_eco/Eco.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/config/YAML/PluginConfig.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/config/YAML/SpecialConfig.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/CommandHandler.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/command/CommandHandler.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/command/PayCommandHandler.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/command/EcoCommandHandler.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Eco/src/plugin.yml" />
+        <option value="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/Eco.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1278" />
+    <option name="height" value="867" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ReBoot_PluginDev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReBoot_Eco" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReBoot_PluginDev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReBoot_Eco" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReBoot_PluginDev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReBoot_Eco" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="reboot_eco" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReBoot_PluginDev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReBoot_Eco" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="reboot_eco" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BukkitDev" type="58d84e3e:PackageViewProjectNode" />
+              <item name="MedievalNPC" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="BukkitDev" type="58d84e3e:PackageViewProjectNode" />
+              <item name="MedievalNPC" type="616d4139:PackageViewModuleNode" />
+              <item name="com.saf.medievalnpc" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="F:/Storage/Libs/spigot-api-1.12.2-R0.1-SNAPSHOT-shaded.jar!/" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.saf.medievaleco" />
+      <recent name="com.saf.medievaleco.config" />
+      <recent name="com.skyandforest.reboot_dungeons" />
+      <recent name="com.skyandforest.reboot_auth.internal" />
+      <recent name="com.skyandforest.reboot_auth.command" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.saf.medievalcore" />
+      <recent name="com.saf.medievaleco" />
+      <recent name="com.skyandforest.reboot_shop" />
+      <recent name="com.skyandforest.rb_shop" />
+      <recent name="com.skyandforest.rb_shop.exception" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\CNet\Code\Java\BukkitDev" />
+      <recent name="F:\CNet\Code\Java\BukkitDev\ReBoot_Shop\src\com\skyandforest\rb_shop" />
+      <recent name="F:\CNet\Code\Java\BukkitDev\ReBoot_Shop\src\com.skyandforest.rb_shop" />
+      <recent name="E:\Projects\Code\Java\BukkitDev\MedievalEco\src" />
+      <recent name="E:\Projects\Code\Java\BukkitDev\MedievalCoins\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="86466175-c029-48a7-9ae7-bbe0c40a3ef0" name="Default" comment="" />
+      <created>1503244936985</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1503244936985</updated>
+      <workItem from="1513498137401" duration="16410000" />
+      <workItem from="1514485766388" duration="45000" />
+      <workItem from="1514758294034" duration="12435000" />
+      <workItem from="1514806817962" duration="18982000" />
+      <workItem from="1514829496308" duration="6517000" />
+      <workItem from="1515320076729" duration="1701000" />
+      <workItem from="1515349763812" duration="1340000" />
+      <workItem from="1515404883886" duration="3993000" />
+      <workItem from="1515412748447" duration="3095000" />
+      <workItem from="1526691939317" duration="34390000" />
+      <workItem from="1526802758243" duration="1880000" />
+      <workItem from="1526804923580" duration="1320000" />
+      <workItem from="1526807735866" duration="6320000" />
+      <workItem from="1526928188611" duration="2243000" />
+      <workItem from="1526930544703" duration="869000" />
+      <workItem from="1526995970469" duration="7581000" />
+      <workItem from="1527061097422" duration="785000" />
+      <workItem from="1527065637921" duration="2216000" />
+      <workItem from="1527070661929" duration="88000" />
+      <workItem from="1527070940448" duration="416000" />
+      <workItem from="1527071476646" duration="604000" />
+      <workItem from="1527072299029" duration="42000" />
+      <workItem from="1527073037957" duration="8720000" />
+      <workItem from="1527186499809" duration="1201000" />
+      <workItem from="1527275376827" duration="548000" />
+      <workItem from="1527357004006" duration="7168000" />
+      <workItem from="1527368519231" duration="589000" />
+      <workItem from="1528657503294" duration="6205000" />
+      <workItem from="1528702363330" duration="504000" />
+      <workItem from="1529004980972" duration="674000" />
+      <workItem from="1529698035615" duration="9491000" />
+      <workItem from="1529782643272" duration="6826000" />
+      <workItem from="1529790432768" duration="3046000" />
+      <workItem from="1529861977779" duration="6431000" />
+      <workItem from="1529870746674" duration="6028000" />
+      <workItem from="1529904391553" duration="2008000" />
+      <workItem from="1529906688771" duration="4397000" />
+      <workItem from="1530002529719" duration="4963000" />
+      <workItem from="1530031144920" duration="578000" />
+      <workItem from="1530083692897" duration="9103000" />
+      <workItem from="1530104156038" duration="1414000" />
+      <workItem from="1530119244876" duration="4547000" />
+      <workItem from="1530124472201" duration="8876000" />
+      <workItem from="1530297948445" duration="659000" />
+      <workItem from="1532368337018" duration="6215000" />
+      <workItem from="1532446610090" duration="952000" />
+      <workItem from="1532450835653" duration="6053000" />
+      <workItem from="1532459049089" duration="1625000" />
+      <workItem from="1532461294121" duration="6610000" />
+      <workItem from="1532505331874" duration="4341000" />
+      <workItem from="1532522039945" duration="1324000" />
+      <workItem from="1532534746706" duration="591000" />
+      <workItem from="1532547205688" duration="594000" />
+      <workItem from="1532705020852" duration="7513000" />
+      <workItem from="1532721828227" duration="11131000" />
+      <workItem from="1532939256624" duration="576000" />
+      <workItem from="1532986009754" duration="569000" />
+      <workItem from="1533037465380" duration="2816000" />
+      <workItem from="1533056837543" duration="8870000" />
+      <workItem from="1533111104509" duration="2451000" />
+      <workItem from="1533132642308" duration="7550000" />
+      <workItem from="1533149441684" duration="549000" />
+      <workItem from="1533706861158" duration="1328000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="288906000" />
+  </component>
+  <component name="TodoView" selected-index="2">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.63545567" visible="true" weight="0.11503856" />
+      <window_info id="Structure" order="1" sideWeight="0.36454433" side_tool="true" weight="0.15019506" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" sideWeight="0.50715744" side_tool="true" weight="0.20565553" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4975" weight="0.3242542" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.48764628" weight="0.32958803" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3196005" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.526658" side_tool="true" weight="0.24594258" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32958803" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="11" weight="0.32988358" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.473342" weight="0.24383917" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.2496749" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Remote Host" order="9" weight="0.3296355" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/config/Lang.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MedievalEco/src/com/saf/reboot_eco/config/Lang.java" />
+    <entry file="file://$PROJECT_DIR$/MedievalEco/src/com/saf/reboot_eco/config/Settings.java" />
+    <entry file="file://$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/command/CommandFramework.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/command/CommandHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MedievalCore/src/com/saf/medievalcore/CommandHandler.java" />
+    <entry file="file://$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/util/ErrorLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/Shop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/task/ErrorLoggerTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MedievalCore/src/com/saf/medievalcore/ErrorLoggerTask.java" />
+    <entry file="file://$PROJECT_DIR$/ReBoot_Shop/resources/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MedievalCore/src/com/saf/medievalcore/Catcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MedievalCore/src/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MedievalCore/src/com/saf/medievalcore/_CommandExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="110" selection-start-line="19" selection-start-column="88" selection-end-line="19" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/Auth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="88" lean-forward="true" selection-start-line="87" selection-start-column="8" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/Permissions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" selection-start-line="4" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/SerializableItemStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/config/yaml/SpecialConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MedievalEco/src/com/saf/reboot_eco/Eco.java" />
+    <entry file="file://$PROJECT_DIR$/ReBoot_Auth/src/resources/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://F:/BT/1.12.2/Spigot/Spigot-API/target/spigot-api-1.12.2-R0.1-SNAPSHOT-shaded.jar!/org/bukkit/permissions/ServerOperator.class" />
+    <entry file="jar://F:/BT/1.12.2/Spigot/Spigot-API/target/spigot-api-1.12.2-R0.1-SNAPSHOT-shaded.jar!/org/bukkit/permissions/Permissible.class" />
+    <entry file="file://$PROJECT_DIR$/MedievalEco/src/com/saf/reboot_eco/Permissions.java" />
+    <entry file="file://$PROJECT_DIR$/ReBoot_Dungeons/src/com/skyandforest/reboot_dungeons/_Listener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MedievalEco/src/com/saf/reboot_eco/CommandHandler.java" />
+    <entry file="file://$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/config/yaml/PluginConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/config/Lang.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/config/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/config/AsciiPlaceholders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MedievalEco/src/plugin.yml" />
+    <entry file="file://$PROJECT_DIR$/MedievalEco/src/com/skyandforest/reboot_eco/CommandHandler.java" />
+    <entry file="file://$PROJECT_DIR$/MedievalEco/src/com/skyandforest/reboot_eco/config/Lang.java" />
+    <entry file="file://$PROJECT_DIR$/MedievalEco/src/com/skyandforest/reboot_eco/config/Settings.java" />
+    <entry file="file://$PROJECT_DIR$/MedievalEco/src/com/skyandforest/reboot_eco/Permissions.java" />
+    <entry file="file://$PROJECT_DIR$/MedievalEco/src/com/skyandforest/reboot_eco/Eco.java" />
+    <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/config/YAML/SpecialConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Dungeons/src/com/skyandforest/reboot_dungeons/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/config/YAML/PluginConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MedievalCore/src/com/saf/medievalcore/ErrorLogger.java" />
+    <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/commands.java" />
+    <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/Permissions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/util/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1296">
+          <caret line="326" column="20" lean-forward="true" selection-start-line="326" selection-start-column="20" selection-end-line="326" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Storage/Libs/spigot-api-1.12.2-R0.1-SNAPSHOT-shaded.jar!/org/bukkit/permissions/Permissible.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/RuntimeException.java" />
+    <entry file="file://$PROJECT_DIR$/MedievalCore/src/com/saf/medievalcore/CommandFramework.java" />
+    <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/command/EcoCommandHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="114" selection-start-line="114" selection-end-line="114" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/command/PayCommandHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MedievalCore/src/com/saf/medievalcore/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="62" column="1" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/Eco.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="method#onEnable#0;class#Eco#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>ReBoot_Core:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>ReBoot_Core</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>spigot-api-1.12.2-R0.1-SNAPSHOT-shaded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
