@@ -1,6 +1,6 @@
-name: ReBootShop
+name: RBShop
 main: com.skyandforest.reboot_shop.Shop
-version: "18.26.3.26s"
+version: 18.26.3.26
 commands:
    shop:
       description: Main command for shop system.

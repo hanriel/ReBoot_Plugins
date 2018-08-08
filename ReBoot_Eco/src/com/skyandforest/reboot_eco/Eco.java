@@ -1,6 +1,5 @@
 package com.skyandforest.reboot_eco;
 
-import com.saf.medievalcore.*;
 import com.saf.reboot_core.CommandFramework;
 import com.saf.reboot_core.Core;
 import com.saf.reboot_core.ErrorLogger;
@@ -94,7 +93,7 @@ public class Eco extends JavaPlugin {
         player.setMetadata("d", new FixedMetadataValue(Core.plugin, amount));
     }
 
-    public static long getCopper(String cur, long amount) {
+    public long getCopper(String cur, long amount) {
         if (cur.charAt(0) == 's') return amount * 100;
         if (cur.charAt(0) == 'g') return amount * 10000;
         return amount;
@@ -120,7 +119,7 @@ public class Eco extends JavaPlugin {
         return r;
     }
 
-    public static boolean hasMoney(Player player, String cur, long amount) {
+    public boolean hasMoney(Player player, String cur, long amount) {
         long i = player.getMetadata("c").get(0).asLong();
         long am = getCopper(cur, amount);
         return am <= i;

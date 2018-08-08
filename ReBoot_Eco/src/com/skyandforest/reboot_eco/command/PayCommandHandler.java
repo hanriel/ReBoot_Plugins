@@ -11,8 +11,11 @@ import org.bukkit.entity.Player;
 
 public class PayCommandHandler extends CommandFramework {
 
+    Eco eco;
+
     public PayCommandHandler(String label) {
         super(label);
+        this.eco = Eco.getInstance();
     }
 
     @Override
@@ -36,8 +39,8 @@ public class PayCommandHandler extends CommandFramework {
 
         CommandValidate.notNull(target, Utils.addColors(Eco.CHAT_PREFIX + "&сЭтот игрок не в сети!"));
 
-        long amount = Eco.getCopper(args[2],(long) CommandValidate.getPositiveDouble(args[1]));
-        CommandValidate.isTrue(!Eco.hasMoney(target,  args[2], amount),Eco.CHAT_PREFIX + ChatColor.RED + "У вас недостаточно средств для перевода!");
+        long amount = eco.getCopper(args[2],(long) CommandValidate.getPositiveDouble(args[1]));
+        CommandValidate.isTrue(!eco.hasMoney(target,  args[2], amount),Eco.CHAT_PREFIX + ChatColor.RED + "У вас недостаточно средств для перевода!");
 
         Eco.addBalance(target, amount);
         Eco.addBalance((Player) sender, -amount);

@@ -1,6 +1,5 @@
 package com.skyandforest.reboot_eco.command;
 
-import com.saf.medievalcore.*;
 import com.saf.reboot_core.CommandFramework;
 import com.saf.reboot_core.ErrorLogger;
 import com.saf.reboot_core.ErrorLoggerTask;
@@ -15,8 +14,11 @@ import org.bukkit.entity.Player;
 
 public class EcoCommandHandler extends CommandFramework {
 
+    private Eco eco;
+
     public EcoCommandHandler(String label) {
         super(label);
+        eco = Eco.getInstance();
     }
 
     @Override
@@ -92,7 +94,7 @@ public class EcoCommandHandler extends CommandFramework {
             Player target = Bukkit.getPlayerExact(args[1]);
             CommandValidate.notNull(target, Utils.addColors(Eco.CHAT_PREFIX + "&сЭтот игрок не в сети!"));
 
-            long amount = Eco.getCopper(args[3],(long) CommandValidate.getPositiveDouble(args[2]));
+            long amount = eco.getCopper(args[3],(long) CommandValidate.getPositiveDouble(args[2]));
 
             Eco.addBalance(target, amount);
             sender.sendMessage(Utils.addColors(Eco.CHAT_PREFIX + "Счёт игрока успешно пополнен на: &e"+amount+" &aмеди."));
@@ -110,7 +112,7 @@ public class EcoCommandHandler extends CommandFramework {
             Player target = Bukkit.getPlayerExact(args[1]);
             CommandValidate.notNull(target, Utils.addColors(Eco.CHAT_PREFIX + "&сЭтот игрок не в сети!"));
 
-            long amount = Eco.getCopper(args[3],(long) CommandValidate.getPositiveDouble(args[2]));
+            long amount = eco.getCopper(args[3],(long) CommandValidate.getPositiveDouble(args[2]));
 
             Eco.setBalance(target, amount);
             sender.sendMessage(Utils.addColors(Eco.CHAT_PREFIX + "Счёт игрока успешно становлен в: &e"+amount+" &aмеди."));

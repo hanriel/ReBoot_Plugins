@@ -1,9 +1,8 @@
 package com.skyandforest.reboot_shop.config;
 
+import com.saf.reboot_core.util.Utils;
 import com.skyandforest.reboot_shop.Shop;
 import com.skyandforest.reboot_shop.ErrorLogger;
-import com.skyandforest.reboot_shop.Utils;
-import org.apache.commons.lang.StringEscapeUtils;
 
 import java.io.File;
 import java.io.IOException;
@@ -19,39 +18,39 @@ public class AsciiPlaceholders {
         placeholders.clear();
         File file = new File(Shop.getInstance().getDataFolder(), "placeholders.yml");
 
-        if (!file.exists()) {
-            Utils.saveResourceSafe(Shop.getInstance(), "placeholders.yml");
-        }
+//        if (!file.exists()) {
+//            Utils.saveResourceSafe(Shop.getInstance(), "placeholders.yml");
+//        }
 
-        List<String> lines = Utils.readLines(file);
-        for (String line : lines) {
-
-            // Comment or empty line.
-            if (line.isEmpty() || line.startsWith("#"))  {
-                continue;
-            }
-
-            if (!line.contains(":")) {
-                errorLogger.addError("Unable to parse a line(" + line + ") from placeholders.yml: it must contain ':' to separate the placeholder and the replacement.");
-                continue;
-            }
-
-            int indexOf = line.indexOf(':');
-            String placeholder = unquote(line.substring(0, indexOf).trim());
-            String replacement = Utils.addColors(StringEscapeUtils.unescapeJava(unquote(line.substring(indexOf + 1, line.length()).trim())));
-
-            if (placeholder.length() == 0 || replacement.length() == 0) {
-                errorLogger.addError("Unable to parse a line(" + line + ") from placeholders.yml: the placeholder and the replacement must have both at least 1 character.");
-                continue;
-            }
-
-            if (placeholder.length() > 100) {
-                errorLogger.addError("Unable to parse a line(" + line + ") from placeholders.yml: the placeholder cannot be longer than 100 characters.");
-                continue;
-            }
-
-            placeholders.put(placeholder, replacement);
-        }
+//        List<String> lines = Utils.readLines(file);
+//        for (String line : lines) {
+//
+//            // Comment or empty line.
+//            if (line.isEmpty() || line.startsWith("#"))  {
+//                continue;
+//            }
+//
+//            if (!line.contains(":")) {
+//                errorLogger.addError("Unable to parse a line(" + line + ") from placeholders.yml: it must contain ':' to separate the placeholder and the replacement.");
+//                continue;
+//            }
+//
+//            int indexOf = line.indexOf(':');
+//            String placeholder = unquote(line.substring(0, indexOf).trim());
+//            String replacement = Utils.addColors(StringEscapeUtils.unescapeJava(unquote(line.substring(indexOf + 1, line.length()).trim())));
+//
+//            if (placeholder.length() == 0 || replacement.length() == 0) {
+//                errorLogger.addError("Unable to parse a line(" + line + ") from placeholders.yml: the placeholder and the replacement must have both at least 1 character.");
+//                continue;
+//            }
+//
+//            if (placeholder.length() > 100) {
+//                errorLogger.addError("Unable to parse a line(" + line + ") from placeholders.yml: the placeholder cannot be longer than 100 characters.");
+//                continue;
+//            }
+//
+//            placeholders.put(placeholder, replacement);
+//        }
     }
 
     public static List<String> placeholdersToSymbols(List<String> input) {

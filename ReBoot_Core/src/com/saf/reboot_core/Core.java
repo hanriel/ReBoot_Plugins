@@ -19,9 +19,19 @@ import java.util.Scanner;
 public class Core extends JavaPlugin {
 
     public static Core plugin;
+    private Core instance;
+
+    private static int lastReloadErrors;
 
     @Override
     public void onEnable() {
+        if (instance != null) {
+            getLogger().warning("Please do not use /reload or plugin reloaders. Do \"/eco reload\" instead.");
+            return;
+        }
+
+        instance = this;
+        
         try {
             plugin = this;
 
@@ -47,6 +57,14 @@ public class Core extends JavaPlugin {
             Log.warning("Error loading plugin!!!");
             e.printStackTrace();
             super.setEnabled(false);
+        }
+
+        ErrorLogger errorLogger = new ErrorLogger();
+//        load(errorLogger);
+
+        lastReloadErrors = errorLogger.getSize();
+        if (errorLogger.hasErrors()) {
+            Bukkit.getScheduler().scheduleSyncDelayedTask(this, new ErrorLoggerTask(errorLogger), 10L);
         }
     }
 
@@ -96,12 +114,13 @@ public class Core extends JavaPlugin {
             saveData.put("c", 0);//Copper
             saveData.put("lvl", 1); //Current lvl
             saveData.put("exp", 0); //Current exp
-        }        /*if (Catcher.minv) {
-            Log.warning("КАКОГО ХУЯ ИНВЕНТАРЬ ПОДГРУЖЕН?");
+        }
+        if (Catcher.mgui) {
+
         }
         if (Catcher.mnpc) {
-            //Log.warning("КАКОГО ХУЯ ИНВЕНТАРЬ ПОДГРУЖЕН?");
-        }*/
+
+        }
 
         savePlayerData(saveData, uuid);
     }

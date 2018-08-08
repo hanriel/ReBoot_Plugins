@@ -37,11 +37,11 @@ public class _CommandExecutor implements CommandExecutor {
                             for (HashMap.Entry<Double[], EntityPlayer> npc : NPC.npcs.entrySet()) {
                                 if (Objects.equals(npc.getKey()[0], Double.valueOf(args[1]))) {
                                     NPC.npcs.remove(npc.getKey());
-                                    s.sendMessage(Utils.translateColor("&3NPC №&f" + npc.getKey()[0].toString() + "&3 successful remove...Rejoin please..."));
+                                    s.sendMessage(Utils.addColors("&3NPC №&f" + npc.getKey()[0].toString() + "&3 successful remove...Rejoin please..."));
                                     return true;
                                 }
                             }
-                            s.sendMessage(Utils.translateColor("&3Oops...NPC №&f" + args[1] + "&3 not found O_o\r\nPlese use \"npc list\" for view a list of npc's"));
+                            s.sendMessage(Utils.addColors("&3Oops...NPC №&f" + args[1] + "&3 not found O_o\r\nPlese use \"npc list\" for view a list of npc's"));
                             return false;
                         default:
                             NPC.npc = new DefNPC(args[0], ((Player) s).getLocation());
@@ -71,24 +71,24 @@ public class _CommandExecutor implements CommandExecutor {
                                         return true;
                                     }
                                 } else {
-                                    s.sendMessage(Utils.translateColor("&cInvalid arguments: place not found."));
+                                    s.sendMessage(Utils.addColors("&cInvalid arguments: place not found."));
                                 }
                             } else if(argCount == 3 && Bukkit.getServer().getPlayer(args[2]) != null){
                                 if(NPC.places.containsKey(args[1])){
                                     Bukkit.getServer().getPlayer(args[2]).teleport(NPC.places.get(args[1]).getLocation());
                                     return true;
                                 } else {
-                                    s.sendMessage(Utils.translateColor("&cInvalid arguments: place not found."));
+                                    s.sendMessage(Utils.addColors("&cInvalid arguments: place not found."));
                                 }
 
                             }
-                            s.sendMessage(Utils.translateColor("&cInvalid argument."));
+                            s.sendMessage(Utils.addColors("&cInvalid argument."));
                             return false;
                         case "list":
                             for (Map.Entry<String, Place> entry: NPC.places.entrySet()) {
                                 String[] msg = new String[2];
-                                msg[0] = Utils.translateColor("===&3Name: &f" + entry.getValue().getName());
-                                msg[1] = Utils.translateColor(
+                                msg[0] = Utils.addColors("===&3Name: &f" + entry.getValue().getName());
+                                msg[1] = Utils.addColors(
                                         "&3X: &f" + String.format("%(.2f", entry.getValue().getLocation().getX()) +
                                         " &3Y: &f" + String.format("%(.2f", entry.getValue().getLocation().getY()) +
                                         " &3Z: &f" + String.format("%(.2f", entry.getValue().getLocation().getZ()));
@@ -103,12 +103,12 @@ public class _CommandExecutor implements CommandExecutor {
                                     loc.setYaw(0f);
                                     loc.setPitch(0f);
                                 } else {
-                                    s.sendMessage(Utils.translateColor("&cInvalid arguments: X Y Z [World]..."));
+                                    s.sendMessage(Utils.addColors("&cInvalid arguments: X Y Z [World]..."));
                                     return false;
                                 }
                             } else if (argCount == 6) {
                                 if (Bukkit.getWorld(args[5]) == null) {
-                                    s.sendMessage(Utils.translateColor("&cInvalid argument: World"));
+                                    s.sendMessage(Utils.addColors("&cInvalid argument: World"));
                                     return false;
                                 }
 
@@ -120,13 +120,13 @@ public class _CommandExecutor implements CommandExecutor {
                                         Double.parseDouble(args[4])
                                 );
                             } else {
-                                s.sendMessage(Utils.translateColor("&cInvalid arguments: X Y Z [World]"));
+                                s.sendMessage(Utils.addColors("&cInvalid arguments: X Y Z [World]"));
                                 return false;
                             }
                             try{
                                 Place p = new Place(args[1],loc);
                                 NPC.places.put(args[1], p);
-                                s.sendMessage(Utils.translateColor("&aNew point created successfully."));
+                                s.sendMessage(Utils.addColors("&aNew point created successfully."));
                             } catch (Exception e){
                                 e.printStackTrace();
                                 return false;
@@ -136,21 +136,21 @@ public class _CommandExecutor implements CommandExecutor {
                             if (argCount == 2 && NPC.places.containsKey(args[1])) {
                                 NPC.places.get(args[1]).setEnabled(false);
                                 NPC.places.remove(args[1]);
-                                s.sendMessage(Utils.translateColor("&aThe point was deleted successfully."));
+                                s.sendMessage(Utils.addColors("&aThe point was deleted successfully."));
                                 return true;
                             }
-                        s.sendMessage(Utils.translateColor("&cInvalid argument."));
+                        s.sendMessage(Utils.addColors("&cInvalid argument."));
                         return false;
                         case "setup":
                             if (argCount > 1 && NPC.places.containsKey(args[1])) {
                                 if (argCount == 2) {
                                     Place p = NPC.places.get(args[1]);
                                     String[] _msg = new String[5];
-                                    _msg[0] = Utils.translateColor("&7-------------------&aMedieval&c Places&7-------------------");
-                                    _msg[1] = Utils.translateColor("Name: &a" + p.getName());
-                                    _msg[2] = Utils.translateColor("Loc: &a" + p.getLocation().toString());
-                                    _msg[3] = Utils.translateColor("Enabled: &a" + p.isEnabled().toString());
-                                    _msg[4] = Utils.translateColor("&7-----------------------------------------------------");
+                                    _msg[0] = Utils.addColors("&7-------------------&aMedieval&c Places&7-------------------");
+                                    _msg[1] = Utils.addColors("Name: &a" + p.getName());
+                                    _msg[2] = Utils.addColors("Loc: &a" + p.getLocation().toString());
+                                    _msg[3] = Utils.addColors("Enabled: &a" + p.isEnabled().toString());
+                                    _msg[4] = Utils.addColors("&7-----------------------------------------------------");
                                     s.sendMessage(_msg);
                                     return true;
                                 }
@@ -158,7 +158,7 @@ public class _CommandExecutor implements CommandExecutor {
                                     case "loc":
                                         if (argCount>6) {
                                             if (Bukkit.getWorld(args[6]) == null) {
-                                                s.sendMessage(Utils.translateColor("&сInvalid argument: World"));
+                                                s.sendMessage(Utils.addColors("&сInvalid argument: World"));
                                                 return false;
                                             }
 
@@ -183,13 +183,13 @@ public class _CommandExecutor implements CommandExecutor {
                                     case "name":
                                         return true;
                                     default:
-                                        s.sendMessage(Utils.translateColor("&cInvalid argument: " + args[2]));
+                                        s.sendMessage(Utils.addColors("&cInvalid argument: " + args[2]));
                                         return false;
                                 }
                             }
                             return true;
                         default:
-                            s.sendMessage(Utils.translateColor("&cInvalid argument: " + args[0]));
+                            s.sendMessage(Utils.addColors("&cInvalid argument: " + args[0]));
                             return false;
                     }
                 }

@@ -1,5 +1,6 @@
 package com.skyandforest.reboot_shop.command;
 
+import com.saf.reboot_core.util.Utils;
 import com.skyandforest.reboot_shop.*;
 import com.skyandforest.reboot_shop.task.ErrorLoggerTask;
 import org.bukkit.ChatColor;
@@ -125,7 +126,7 @@ public class CommandHandler extends CommandFramework implements Listener {
                 if(event.getPosition() <= 43 && event.getPosition() >= 0) {
                     event.setWillClose(false);
                     event.setWillDestroy(true);
-                    confirmPay(player, event.getItem());
+                    confirmPay(event.getPlayer(), event.getItem());
                     return;
                 } else if ((event.getPosition() <= 48) && (event.getPosition() >= 46)) {
                     event.setWillClose(false);
@@ -134,12 +135,12 @@ public class CommandHandler extends CommandFramework implements Listener {
                 } else if (event.getPosition() == 45) {
                     event.setWillClose(false);
                     event.setWillDestroy(true);
-                    nextPage(player, page-1);
+                    nextPage(event.getPlayer(), page-1);
                     return;
                 } else if (event.getPosition() == 53) {
                     event.setWillClose(false);
                     event.setWillDestroy(true);
-                    nextPage(player, page+1);
+                    nextPage(event.getPlayer(), page+1);
                     return;
                 } else if (event.getPosition() == 49) {
 //                  sort(target);

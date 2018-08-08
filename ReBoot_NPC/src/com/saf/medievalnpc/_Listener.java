@@ -45,7 +45,7 @@ public class _Listener implements Listener {
                     }
                     if(player.getLocation().distance(entry.getValue().getLocation()) < 5){
                         currentPos = entry.getKey();
-                        player.sendMessage(Utils.translateColor("&aWelcome to region: ") + entry.getKey());
+                        player.sendMessage(Utils.addColors("&aWelcome to region: ") + entry.getKey());
 
                         partMain(player);
                         break;

@@ -9,15 +9,15 @@ class Catcher {
 
     static void hook(){
         Log.log("Loading hooks...");
-        if (Bukkit.getPluginManager().isPluginEnabled("ReBootEco")) {
+        if (Bukkit.getPluginManager().isPluginEnabled("RBEco")) {
             mcoins = true;
             Log.success("MedievalEco hooked!");
         }
-        if (Bukkit.getPluginManager().isPluginEnabled("MedievalNPC")) {
+        if (Bukkit.getPluginManager().isPluginEnabled("RBNPC")) {
             mnpc = true;
             Log.success("MedievalNPC hooked!");
         }
-        if (Bukkit.getPluginManager().isPluginEnabled("MedievalGUI")) {
+        if (Bukkit.getPluginManager().isPluginEnabled("RBGUI")) {
             mgui = true;
             Log.success("MedievalGUI hooked!");
         }

@@ -1,6 +1,6 @@
 package com.skyandforest.reboot_shop;
 
-import com.saf.medievaleco.Eco;
+import com.skyandforest.reboot_eco.Eco;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.RegisteredServiceProvider;
@@ -10,7 +10,7 @@ public class EconomyBridge {
 	private static Eco economy;
 
 	static boolean setupEconomy() {
-        if (Bukkit.getPluginManager().getPlugin("Vault") == null) {
+        if (Bukkit.getPluginManager().getPlugin("RBEco") == null) {
             return false;
         }
         RegisteredServiceProvider<Eco> rsp = Bukkit.getServicesManager().getRegistration(Eco.class);
@@ -37,9 +37,7 @@ public class EconomyBridge {
 	public static boolean hasMoney(Player player, double minimum) {
 		if (!hasValidEconomy()) throw new IllegalStateException("Economy plugin was not found!");
 		if (minimum < 0.0) throw new IllegalArgumentException("Invalid amount of money: " + minimum);
-		double balance = economy.getAmount(player);
-
-		return !(balance < minimum);
+		return economy.hasMoney(player, "copper", (long)minimum);
 	}
 	
 	/**

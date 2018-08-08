@@ -1,4 +1,4 @@
-name: ReBootEco
+name: RBEco
 main: com.skyandforest.reboot_eco.Eco
 version: 18.31.3.19
 load: STARTUP

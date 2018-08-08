@@ -1,5 +1,6 @@
 package com.skyandforest.reboot_shop;
 
+import com.saf.reboot_core.util.Utils;
 import com.skyandforest.reboot_shop.command.CommandFramework;
 import com.skyandforest.reboot_shop.command.CommandHandler;
 import com.skyandforest.reboot_shop.config.AsciiPlaceholders;
@@ -152,14 +153,14 @@ public class Shop extends JavaPlugin {
             getLogger().warning("Unhandled error while reading the placeholders! Please inform the developer.");
         }
 
-        // Load the menus.
-        File menusFolder = new File(getDataFolder(), "menu");
+//        // Load the menus.
+//        File menusFolder = new File(getDataFolder(), "menu");
 
-        if (!menusFolder.isDirectory()) {
-            // Create the directory with the default menu.
-            menusFolder.mkdirs();
-            Utils.saveResourceSafe(this, "menu" + File.separator + "example.yml");
-        }
+//        if (!menusFolder.isDirectory()) {
+//            // Create the directory with the default menu.
+//            menusFolder.mkdirs();
+//            Utils.saveResourceSafe(this, "menu" + File.separator + "example.yml");
+//        }
 
 //        List<PluginConfig> menusList = loadMenus(menusFolder);
 //        for (PluginConfig menuConfig : menusList) {
