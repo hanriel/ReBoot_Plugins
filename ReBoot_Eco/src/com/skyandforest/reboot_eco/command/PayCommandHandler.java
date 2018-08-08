@@ -1,7 +1,7 @@
 package com.skyandforest.reboot_eco.command;
 
-import com.saf.medievalcore.CommandFramework;
-import com.saf.medievalcore.Utils;
+import com.saf.reboot_core.CommandFramework;
+import com.saf.reboot_core.util.Utils;
 import com.skyandforest.reboot_eco.Eco;
 import com.skyandforest.reboot_eco.Permissions;
 import org.bukkit.Bukkit;
@@ -24,18 +24,19 @@ public class PayCommandHandler extends CommandFramework {
         );
 
         CommandValidate.minLength(args, 3, "Usage: /" + label + " <player> <amount> <currency>");
-        Player target = null;
 
+        Player target = null;
         if (!(sender instanceof Player)) {
-            CommandValidate.minLength(args, 3, Eco.CHAT_PREFIX + ChatColor.RED + "You must specify a player from the console.");
+
+            sender.sendMessage(Eco.CHAT_PREFIX + ChatColor.RED + "Этого нельзя сделать от имени консоли!");
             return;
         } else {
             target = Bukkit.getPlayerExact(args[0]);
         }
 
-        long amount = Eco.getCopper(args[2],(long) CommandValidate.getPositiveDouble(args[1]));
-
         CommandValidate.notNull(target, Utils.addColors(Eco.CHAT_PREFIX + "&сЭтот игрок не в сети!"));
+
+        long amount = Eco.getCopper(args[2],(long) CommandValidate.getPositiveDouble(args[1]));
         CommandValidate.isTrue(!Eco.hasMoney(target,  args[2], amount),Eco.CHAT_PREFIX + ChatColor.RED + "У вас недостаточно средств для перевода!");
 
         Eco.addBalance(target, amount);

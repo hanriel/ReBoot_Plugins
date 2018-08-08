@@ -1,5 +1,6 @@
 package com.skyandforest.reboot_eco.config.YAML;
 
+import com.saf.reboot_core.util.Utils;
 import org.bukkit.configuration.InvalidConfigurationException;
 
 import java.io.IOException;
@@ -83,7 +84,7 @@ public class SpecialConfig {
                     field.set(this, config.getDouble(configKey));
 
                 } else if (type == String.class) {
-                    field.set(this, com.saf.medievalcore.Utils.addColors(config.getString(configKey)));
+                    field.set(this, Utils.addColors(config.getString(configKey)));
 
                 } else {
                     config.getPlugin().getLogger().warning("Unknown field type: " + field.getType().getName() + " (" + field.getName() + "). Please inform the developer.");

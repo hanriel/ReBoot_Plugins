@@ -1,0 +1,8 @@
+name: MedievalCore
+main: Core
+version: 18.30.5.2
+load: POSTWORLD
+commands:
+  medieval:
+    description: MedievalCore info.
+    usage: /<command> [reload,hooks]

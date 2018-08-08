@@ -1,5 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="ReBoot_Auth:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ReBoot_Auth_jar</output-path>
     <root id="archive" name="ReBoot_Auth.jar">
       <element id="module-output" name="ReBoot_Auth" />
     </root>
