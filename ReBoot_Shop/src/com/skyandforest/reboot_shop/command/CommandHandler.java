@@ -1,6 +1,7 @@
 package com.skyandforest.reboot_shop.command;
 
 import com.saf.reboot_core.util.Utils;
+import com.skyandforest.reboot_eco.Eco;
 import com.skyandforest.reboot_shop.*;
 import com.skyandforest.reboot_shop.task.ErrorLoggerTask;
 import org.bukkit.ChatColor;
@@ -31,7 +32,7 @@ public class CommandHandler extends CommandFramework implements Listener {
 
         if (args.length == 0) {
             CommandValidate.isTrue(sender.hasPermission(Permissions.COMMAND_BASE + "shop"), "You don't have permission.");
-            Player target = null;
+            Player target;
 
             if (!(sender instanceof Player)) {
                 sender.sendMessage(Shop.CHAT_PREFIX + " It is not possible to open a store through the console...");
@@ -169,30 +170,27 @@ public class CommandHandler extends CommandFramework implements Listener {
     }
 
     public void confirmPay(Player player, ItemStack item) {
-        ShopMenu menu = new ShopMenu("ConfPay", 27, new ShopMenu.OptionClickEventHandler() {
-            @Override
-            public void onOptionClick(ShopMenu.OptionClickEvent event) {
-                event.setWillDestroy(true);
+        ShopMenu menu = new ShopMenu("ConfPay", 27, event -> {
+            event.setWillDestroy(true);
+            event.setWillClose(true);
+            int pos = event.getPosition();
+            if ((pos >= 0 && pos <= 2) || (pos >= 9 && pos <= 11) || (pos >= 18 && pos <= 20)) {
                 event.setWillClose(true);
-                int pos = event.getPosition();
-                if ((pos >= 0 && pos <= 2) || (pos >= 9 && pos <= 11) || (pos >= 18 && pos <= 20)) {
-                    event.setWillClose(true);
-                    event.setWillDestroy(true);
+                event.setWillDestroy(true);
 
-                    String lore = item.getItemMeta().getLore().get(0);
-                    int price = Integer.parseInt(lore.substring(10 ,lore.length()-1));
-                    doPayment(event.getPlayer(), price, item);
-                    return;
-                } else if ((pos >= 6 && pos <= 8) || (pos >= 15 && pos <= 17) || (pos >= 24 && pos <= 26)) {
-                    event.setWillClose(false);
-                    event.setWillDestroy(true);
-                    nextPage(player, 1);
-                    return;
-                } else if ((pos >= 3 && pos <= 5) || (pos >= 12 && pos <= 14) || (pos >= 21 && pos <= 23)) {
-                    event.setWillClose(false);
-                    event.setWillDestroy(false);
-                    return;
-                }
+                String lore = item.getItemMeta().getLore().get(0);
+                int price = Integer.parseInt(lore.substring(10 ,lore.length()-1));
+                doPayment(event.getPlayer(), price, item);
+                return;
+            } else if ((pos >= 6 && pos <= 8) || (pos >= 15 && pos <= 17) || (pos >= 24 && pos <= 26)) {
+                event.setWillClose(false);
+                event.setWillDestroy(true);
+                nextPage(player, 1);
+                return;
+            } else if ((pos >= 3 && pos <= 5) || (pos >= 12 && pos <= 14) || (pos >= 21 && pos <= 23)) {
+                event.setWillClose(false);
+                event.setWillDestroy(false);
+                return;
             }
         }, Shop.getInstance())
                 .setOption(0, getIAccept())
@@ -227,7 +225,8 @@ public class CommandHandler extends CommandFramework implements Listener {
     }
 
     private void doPayment(Player player, int price, ItemStack item){
-        if(EconomyBridge.hasMoney(player, price)){
+        long amount =
+        if(Eco.hasMoney(player, "c", price)){
             if(player.getInventory().firstEmpty() != -1){
                 player.getInventory().addItem(item);
                 EconomyBridge.takeMoney(player, price);

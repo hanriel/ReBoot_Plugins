@@ -25,6 +25,11 @@ public class EcoCommandHandler extends CommandFramework {
     public void execute(CommandSender sender, String label, String[] args) {
         if (args.length == 0) {
             CommandValidate.isTrue(
+                    sender instanceof Player,
+                    Utils.addColors(Eco.CHAT_PREFIX + "&cОператор, ты бомж, у тебя нет денег!")
+            );
+
+            CommandValidate.isTrue(
                     sender.hasPermission(Permissions.COMMAND_BASE),
                     Utils.addColors(Eco.CHAT_PREFIX + "&cУ вас недостаточно прав для выполнения данной команды.")
             );

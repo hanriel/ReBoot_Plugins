@@ -1,6 +1,6 @@
 name: RBEco
 main: com.skyandforest.reboot_eco.Eco
-version: 18.31.3.19
+version: 18.32.3.5
 load: STARTUP
 commands:
   eco:
@@ -10,4 +10,4 @@ commands:
   pay:
     description: Совершить перевод денег другому игроку
     usage: /<command> <player> <amount(В меди)>
-    aliases: [pay, зфн]
+    aliases: [зфн]

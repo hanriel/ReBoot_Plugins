@@ -21,7 +21,6 @@ public class Eco extends JavaPlugin {
     public static final String CHAT_PREFIX = ChatColor.AQUA + "[" + ChatColor.GREEN + "Eco" + ChatColor.AQUA + "] " + ChatColor.GREEN;
 
     private static Eco instance;
-    private static Settings settings;
     private static Lang lang;
 
     private static int lastReloadErrors;
@@ -34,7 +33,6 @@ public class Eco extends JavaPlugin {
         }
 
         instance = this;
-        settings = new Settings(new PluginConfig(this, "config.yml"));
         lang = new Lang(new PluginConfig(this, "lang.yml"));
 
         CommandFramework.register(this, new EcoCommandHandler("eco"));
@@ -50,18 +48,6 @@ public class Eco extends JavaPlugin {
     }
 
     public void load(ErrorLogger errorLogger) {
-        try {
-            settings.load();
-        } catch (IOException e) {
-            e.printStackTrace();
-            getLogger().warning("I/O error while using the configuration. Default values will be used.");
-        } catch (InvalidConfigurationException e) {
-            e.printStackTrace();
-            getLogger().warning("The config.yml was not a valid YAML, please look at the error above. Default values will be used.");
-        } catch (Exception e) {
-            e.printStackTrace();
-            getLogger().warning("Unhandled error while reading the values for the configuration! Please inform the developer.");
-        }
 
         try {
             lang.load();
@@ -76,34 +62,21 @@ public class Eco extends JavaPlugin {
             getLogger().warning("Unhandled error while reading the values for the configuration! Please inform the developer.");
         }
 
-        // Register the BungeeCord plugin channel.
         if (!Bukkit.getMessenger().isOutgoingChannelRegistered(this, "BungeeCord")) {
             Bukkit.getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
         }
     }
 
-    public static boolean addDiamond(Player p, long amount) {
-        if (p == null) return false;
-        long d = p.getMetadata("d").get(0).asInt() + amount;
-        p.setMetadata("d", new FixedMetadataValue(Core.plugin, d));
-        return true;
-    }
-
-    public static void setDiamond(Player player, long amount) {
-        player.setMetadata("d", new FixedMetadataValue(Core.plugin, amount));
-    }
-
-    public long getCopper(String cur, long amount) {
+    public static long getCopper(String cur, long amount) {
         if (cur.charAt(0) == 's') return amount * 100;
         if (cur.charAt(0) == 'g') return amount * 10000;
         return amount;
     }
 
-    public static boolean addBalance(Player p, long amount) {
-        if (p == null) return false;
+    public static void addBalance(Player p, long amount) {
+        if (p == null) return;
         long d = p.getMetadata("c").get(0).asInt() + amount;
         p.setMetadata("c", new FixedMetadataValue(Core.plugin, d));
-        return true;
     }
 
     public static void setBalance(Player player, long amount) {
@@ -119,7 +92,7 @@ public class Eco extends JavaPlugin {
         return r;
     }
 
-    public boolean hasMoney(Player player, String cur, long amount) {
+    public static boolean hasMoney(Player player, String cur, long amount) {
         long i = player.getMetadata("c").get(0).asLong();
         long am = getCopper(cur, amount);
         return am <= i;
@@ -129,17 +102,14 @@ public class Eco extends JavaPlugin {
         return instance;
     }
 
-    public static Settings getSettings() {
-        return settings;
-    }
-
-    public static Lang getLang() {
-        return lang;
-    }
-
-    public static int getLastReloadErrors() {
-        return lastReloadErrors;
-    }
+//
+//    public static Lang getLang() {
+//        return lang;
+//    }
+//
+//    public static int getLastReloadErrors() {
+//        return lastReloadErrors;
+//    }
 
     public static void setLastReloadErrors(int lastReloadErrors) {
         Eco.lastReloadErrors = lastReloadErrors;
