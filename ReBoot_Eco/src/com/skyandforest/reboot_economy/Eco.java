@@ -2,8 +2,6 @@ package com.skyandforest.reboot_economy;
 
 import com.skyandforest.reboot_core.command.CommandFramework;
 import com.skyandforest.reboot_core.Core;
-import com.skyandforest.reboot_core.ErrorLogger;
-import com.skyandforest.reboot_core.ErrorLoggerTask;
 import com.skyandforest.reboot_economy.command.*;
 import com.skyandforest.reboot_economy.config.*;
 import com.skyandforest.reboot_economy.config.YAML.PluginConfig;
@@ -23,8 +21,6 @@ public class Eco extends JavaPlugin {
     private static Eco instance;
     private static Lang lang;
 
-    private static int lastReloadErrors;
-
     @Override
     public void onEnable() {
         if (instance != null) {
@@ -38,16 +34,10 @@ public class Eco extends JavaPlugin {
         CommandFramework.register(this, new EcoCommandHandler("eco"));
         CommandFramework.register(this, new PayCommandHandler("pay"));
 
-        ErrorLogger errorLogger = new ErrorLogger();
-        load(errorLogger);
-
-        lastReloadErrors = errorLogger.getSize();
-        if (errorLogger.hasErrors()) {
-            Bukkit.getScheduler().scheduleSyncDelayedTask(this, new ErrorLoggerTask(errorLogger), 10L);
-        }
+        load();
     }
 
-    public void load(ErrorLogger errorLogger) {
+    public void load() {
 
         try {
             lang.load();
@@ -62,21 +52,22 @@ public class Eco extends JavaPlugin {
             getLogger().warning("Unhandled error while reading the values for the configuration! Please inform the developer.");
         }
 
+
+
         if (!Bukkit.getMessenger().isOutgoingChannelRegistered(this, "BungeeCord")) {
             Bukkit.getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
         }
     }
 
-    public static long getCopper(String cur, long amount) {
+    public static long asCopper(String cur, long amount) {
         if (cur.charAt(0) == 's') return amount * 100;
         if (cur.charAt(0) == 'g') return amount * 10000;
         return amount;
     }
 
-    public static void addBalance(Player p, long amount) {
-        if (p == null) return;
-        long d = p.getMetadata("c").get(0).asInt() + amount;
-        p.setMetadata("c", new FixedMetadataValue(Core.getInstance(), d));
+    public static void addBalance(Player player, long amount) {
+        long i = player.getMetadata("c").get(0).asInt() + amount;
+        player.setMetadata("c", new FixedMetadataValue(Core.getInstance(), i));
     }
 
     public static void setBalance(Player player, long amount) {
@@ -84,21 +75,22 @@ public class Eco extends JavaPlugin {
     }
 
     public static long[] getBalance(Player p) {
-        long[] r = new long[3];
-        r[0] = p.getMetadata("c").get(0).asLong();
-        r[2] = r[0] / 10000;
-        r[1] = r[0] / 100 % 100;
-        r[0] %= 100;
-        return r;
+        long[] i = new long[3];
+        i[0] = p.getMetadata("c").get(0).asLong();
+        i[2] = i[0] / 10000;
+        i[1] = i[0] / 100 % 100;
+        i[0] %= 100;
+        return i;
     }
 
-    public static boolean hasMoney(Player player, String cur, long amount) {
+    public static boolean hasBalance(Player player, String cur, long amount) {
         long i = player.getMetadata("c").get(0).asLong();
-        long am = getCopper(cur, amount);
+        long am = asCopper(cur, amount);
         return am <= i;
     }
-    public static Eco getInstance() {
-        return instance;
+
+    public static String formatBalance(long[] amount){
+        return "&e" + amount[2] + " G&7 " + amount[1]+" S&6 " + amount[0] + " C";
     }
 
 //
@@ -106,12 +98,9 @@ public class Eco extends JavaPlugin {
 //        return lang;
 //    }
 //
-//    public static int getLastReloadErrors() {
-//        return lastReloadErrors;
-//    }
 
-    public static void setLastReloadErrors(int lastReloadErrors) {
-        Eco.lastReloadErrors = lastReloadErrors;
+    public static Eco getInstance() {
+        return instance;
     }
 
 }

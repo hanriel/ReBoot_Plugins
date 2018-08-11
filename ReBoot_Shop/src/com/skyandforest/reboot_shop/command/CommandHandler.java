@@ -236,7 +236,7 @@ public class CommandHandler extends CommandFramework implements Listener {
 
     private void doPayment(Player player, int price, ItemStack item){
         long amount = price;
-        if(Eco.hasMoney(player, "c", price)){
+        if(Eco.hasBalance(player, "c", price)){
             if(player.getInventory().firstEmpty() != -1){
                 player.getInventory().addItem(item);
                 EconomyBridge.takeMoney(player, price);

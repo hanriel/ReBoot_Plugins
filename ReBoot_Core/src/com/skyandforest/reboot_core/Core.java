@@ -16,8 +16,6 @@ public class Core extends JavaPlugin {
 
     private static Core instance;
 
-    private static int lastReloadErrors;
-
     @Override
     public void onEnable() {
         if (instance != null) {
@@ -29,16 +27,10 @@ public class Core extends JavaPlugin {
         CommandFramework.register(this, new CoreCommandHandler("core"));
         Core.getInstance().getServer().getPluginManager().registerEvents(new _Listener(), instance);
 
-        ErrorLogger errorLogger = new ErrorLogger();
-        load(errorLogger);
-
-        lastReloadErrors = errorLogger.getSize();
-        if (errorLogger.hasErrors()) {
-            Bukkit.getScheduler().scheduleSyncDelayedTask(this, new ErrorLoggerTask(errorLogger), 10L);
-        }
+        load();
     }
 
-    public void load(ErrorLogger errorLogger) {
+    public void load() {
         File playersFolder = new File(getDataFolder(), "players");
 
         if (!playersFolder.isDirectory()) {
@@ -57,9 +49,5 @@ public class Core extends JavaPlugin {
 
     public static Core getInstance() {
         return instance;
-    }
-
-    public static void setLastReloadErrors(int lastReloadErrors) {
-        Core.lastReloadErrors = lastReloadErrors;
     }
 }

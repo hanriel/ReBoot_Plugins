@@ -1,15 +1,12 @@
 package com.skyandforest.reboot_economy.command;
 
 import com.skyandforest.reboot_core.command.CommandFramework;
-import com.skyandforest.reboot_core.ErrorLogger;
-import com.skyandforest.reboot_core.ErrorLoggerTask;
 import com.skyandforest.reboot_core.util.Utils;
 import com.skyandforest.reboot_economy.Eco;
 import com.skyandforest.reboot_economy.Permissions;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 
 public class EcoCommandHandler extends CommandFramework {
@@ -71,20 +68,7 @@ public class EcoCommandHandler extends CommandFramework {
                     sender.hasPermission(Permissions.COMMAND_ADMIN),
                     Utils.addColors(Eco.CHAT_PREFIX + "&cУ вас недостаточно прав для выполнения данной команды.")
             );
-
-            ErrorLogger errorLogger = new ErrorLogger();
-            Eco.getInstance().load(errorLogger);
-            Eco.setLastReloadErrors(errorLogger.getSize());
-
-            if (!errorLogger.hasErrors()) {
-                sender.sendMessage(Eco.CHAT_PREFIX + "Конфигурации перезагружены.");
-            } else {
-                new ErrorLoggerTask(errorLogger).run();
-                sender.sendMessage(Eco.CHAT_PREFIX + ChatColor.RED + "Конфигурации перезагружены, встречено: " + errorLogger.getSize() + " ошибок.");
-                if (!(sender instanceof ConsoleCommandSender)) {
-                    sender.sendMessage(Eco.CHAT_PREFIX + ChatColor.RED + "Пожайлуста загляни в консоль.");
-                }
-            }
+            sender.sendMessage(Eco.CHAT_PREFIX + "Конфигурации перезагружены. (наверное без ошибок)");
             return;
         }
 
@@ -99,7 +83,7 @@ public class EcoCommandHandler extends CommandFramework {
             Player target = Bukkit.getPlayerExact(args[1]);
             CommandValidate.notNull(target, Utils.addColors(Eco.CHAT_PREFIX + "&сЭтот игрок не в сети!"));
 
-            long amount = eco.getCopper(args[3],(long) CommandValidate.getPositiveDouble(args[2]));
+            long amount = Eco.asCopper(args[3],(long) CommandValidate.getPositiveDouble(args[2]));
 
             Eco.addBalance(target, amount);
             sender.sendMessage(Utils.addColors(Eco.CHAT_PREFIX + "Счёт игрока успешно пополнен на: &e"+amount+" &aмеди."));
@@ -117,7 +101,7 @@ public class EcoCommandHandler extends CommandFramework {
             Player target = Bukkit.getPlayerExact(args[1]);
             CommandValidate.notNull(target, Utils.addColors(Eco.CHAT_PREFIX + "&сЭтот игрок не в сети!"));
 
-            long amount = eco.getCopper(args[3],(long) CommandValidate.getPositiveDouble(args[2]));
+            long amount = Eco.asCopper(args[3],(long) CommandValidate.getPositiveDouble(args[2]));
 
             Eco.setBalance(target, amount);
             sender.sendMessage(Utils.addColors(Eco.CHAT_PREFIX + "Счёт игрока успешно становлен в: &e"+amount+" &aмеди."));

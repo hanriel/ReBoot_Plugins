@@ -50,19 +50,8 @@ public class CoreCommandHandler extends CommandFramework {
                     Utils.addColors(Core.CHAT_PREFIX + "&cУ вас недостаточно прав для выполнения данной команды.")
             );
 
-            ErrorLogger errorLogger = new ErrorLogger();
-            Core.getInstance().load(errorLogger);
-            Core.setLastReloadErrors(errorLogger.getSize());
-
-            if (!errorLogger.hasErrors()) {
-                sender.sendMessage(Core.CHAT_PREFIX + "Конфигурации перезагружены.");
-            } else {
-                new ErrorLoggerTask(errorLogger).run();
-                sender.sendMessage(Core.CHAT_PREFIX + ChatColor.RED + "Конфигурации перезагружены, встречено: " + errorLogger.getSize() + " ошибок.");
-                if (!(sender instanceof ConsoleCommandSender)) {
-                    sender.sendMessage(Core.CHAT_PREFIX + ChatColor.RED + "Пожайлуста загляни в консоль.");
-                }
-            }
+            Core.getInstance().load();
+            sender.sendMessage(Core.CHAT_PREFIX + "Конфигурации перезагружены. (наверное без ошибок)");
             return;
         }
 
