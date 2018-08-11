@@ -1,6 +1,5 @@
 package com.skyandforest.reboot_shop;
 
-import com.saf.reboot_core.util.Utils;
 import com.skyandforest.reboot_shop.command.CommandFramework;
 import com.skyandforest.reboot_shop.command.CommandHandler;
 import com.skyandforest.reboot_shop.config.AsciiPlaceholders;
@@ -23,7 +22,6 @@ public class Shop extends JavaPlugin {
     public static final String CHAT_PREFIX = ChatColor.AQUA + "[" + ChatColor.GREEN + "Shop" + ChatColor.AQUA + "] " + ChatColor.GREEN;
 
     private static Shop instance;
-
     private static Settings settings;
     private static Lang lang;
 
@@ -31,7 +29,6 @@ public class Shop extends JavaPlugin {
     public static HashMap<List, Character> playerSort = new HashMap<List, Character>();
 
     private static int lastReloadErrors;
-
 
     @Override
     public void onEnable() {
@@ -54,7 +51,7 @@ public class Shop extends JavaPlugin {
         }
 
         if (!EconomyBridge.setupEconomy()) {
-            getLogger().warning("Vault with a compatible economy plugin was not found! Icons with a PRICE or commands that give money will not work.");
+            getLogger().warning("Плагин на экономику не найден!");
         }
 
         CommandFramework.register(this, new CommandHandler("shop"));

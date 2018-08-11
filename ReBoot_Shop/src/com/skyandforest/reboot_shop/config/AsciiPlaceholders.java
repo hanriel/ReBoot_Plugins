@@ -1,6 +1,6 @@
 package com.skyandforest.reboot_shop.config;
 
-import com.saf.reboot_core.util.Utils;
+import com.skyandforest.reboot_core.util.Utils;
 import com.skyandforest.reboot_shop.Shop;
 import com.skyandforest.reboot_shop.ErrorLogger;
 

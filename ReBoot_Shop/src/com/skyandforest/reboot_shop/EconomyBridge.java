@@ -1,6 +1,6 @@
 package com.skyandforest.reboot_shop;
 
-import com.skyandforest.reboot_eco.Eco;
+import com.skyandforest.reboot_economy.Eco;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.RegisteredServiceProvider;

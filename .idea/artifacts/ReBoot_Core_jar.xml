@@ -3,7 +3,7 @@
     <output-path>F:/ReBoot/SAF — копия/plugins</output-path>
     <root id="archive" name="ReBoot_Core.jar">
       <element id="module-output" name="ReBoot_Core" />
-      <element id="extracted-dir" path="F:/Storage/Libs/json-simple-1.1.1.jar" path-in-jar="/" />
+      <element id="library" level="project" name="json-simple" />
     </root>
   </artifact>
 </component>

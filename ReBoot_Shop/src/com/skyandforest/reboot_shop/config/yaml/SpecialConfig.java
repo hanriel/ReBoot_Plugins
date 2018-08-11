@@ -1,6 +1,6 @@
 package com.skyandforest.reboot_shop.config.yaml;
 
-import com.saf.reboot_core.util.Utils;
+import com.skyandforest.reboot_core.util.Utils;
 import org.bukkit.configuration.InvalidConfigurationException;
 
 import java.io.IOException;

@@ -8,7 +8,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="ReBoot_Core" />
-    <orderEntry type="library" name="spigot-api-1.12.2-R0.1-SNAPSHOT-shaded" level="project" />
-    <orderEntry type="library" name="craftbukkit-1.12.2-R0.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="spigot" level="project" />
+    <orderEntry type="library" name="craftbukkit" level="project" />
   </component>
 </module>

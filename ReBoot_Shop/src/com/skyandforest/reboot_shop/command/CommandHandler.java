@@ -1,7 +1,7 @@
 package com.skyandforest.reboot_shop.command;
 
-import com.saf.reboot_core.util.Utils;
-import com.skyandforest.reboot_eco.Eco;
+import com.skyandforest.reboot_core.util.Utils;
+import com.skyandforest.reboot_economy.Eco;
 import com.skyandforest.reboot_shop.*;
 import com.skyandforest.reboot_shop.task.ErrorLoggerTask;
 import org.bukkit.ChatColor;
@@ -47,24 +47,34 @@ public class CommandHandler extends CommandFramework implements Listener {
         if (args[0].equalsIgnoreCase("sell")) {
             CommandValidate.isTrue(sender.hasPermission(Permissions.COMMAND_BASE + "pay"), "You don't have permission.");
 
-            Player target = null;
-
-            if (!(sender instanceof Player)) {
-                sender.sendMessage(Shop.CHAT_PREFIX + " It is not possible to open a store through the console...");
-            } else {
-                target = (Player) sender;
-            }
+            com.skyandforest.reboot_core.command.CommandFramework.CommandValidate.isTrue(
+                    sender instanceof Player,
+                    Utils.addColors(Eco.CHAT_PREFIX + "&cОператор, ты бомж, у тебя нет денег!")
+            );
 
             ItemStack itemStack;
-            itemStack = target.getInventory().getItemInMainHand().clone();
+            itemStack = ((Player)sender).getInventory().getItemInMainHand().clone();
 
             sender.sendMessage(Shop.CHAT_PREFIX + ChatColor.GREEN + "Выставлено на продажу!");
 
             ItemMeta im = itemStack.getItemMeta().clone();
 
             List<String> lore = new ArrayList<String>();
-            lore.add(Utils.addColors("&aCost: &c" + args[1] + "$"));
-            lore.add(Utils.addColors("&aSeller: &c" + target.getDisplayName()));
+
+            String lore1 = "&aCost: &c";
+
+            switch (args.length){
+                case 4:
+                    lore1 += String.valueOf(args[3]) + " G ";
+                case 3:
+                    lore1 += String.valueOf(args[2]) + " S ";
+                break;
+            }
+
+            lore1 += String.valueOf(args[1]) + " C ";
+
+            lore.add(Utils.addColors(lore1));
+            lore.add(Utils.addColors("&aSeller: &c" + ((Player)sender).getDisplayName()));
             lore.add("");
             lore.add(Utils.addColors("&aLeft click to buy"));
 
@@ -74,7 +84,7 @@ public class CommandHandler extends CommandFramework implements Listener {
             itemStack.setItemMeta(im);
 
             Shop.iList.add(itemStack);
-            target.getInventory().getItemInMainHand().setAmount(0);
+            ((Player)sender).getInventory().getItemInMainHand().setAmount(0);
             return;
         }
 
@@ -225,7 +235,7 @@ public class CommandHandler extends CommandFramework implements Listener {
     }
 
     private void doPayment(Player player, int price, ItemStack item){
-        long amount =
+        long amount = price;
         if(Eco.hasMoney(player, "c", price)){
             if(player.getInventory().firstEmpty() != -1){
                 player.getInventory().addItem(item);

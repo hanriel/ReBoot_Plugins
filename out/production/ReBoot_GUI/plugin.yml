@@ -1,6 +1,6 @@
 name: RBGUI
-main: com.saf.medievalgui.GUI
-version: 18.21.1.2
+main: com.skyandforest.reboot_gui.GUI
+version: "18.21.1.2"
 load: STARTUP
 commands:
   quest:

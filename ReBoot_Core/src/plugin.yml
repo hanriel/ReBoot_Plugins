@@ -1,8 +1,9 @@
 name: RBCore
-main: com.saf.reboot_core.Core
-version: 18.30.5.2
+main: com.skyandforest.reboot_core.Core
+version: "18.32.6.9"
 load: POSTWORLD
 commands:
-  medieval:
-    description: MedievalCore info.
-    usage: /<command> [reload,hooks]
+  core:
+    description: ReBoot core info.
+    usage: /<command> [help [admin],reload]
+    aliases: [сщку]

@@ -1,6 +1,6 @@
 package com.skyandforest.reboot_dungeons;
 
-import com.saf.reboot_core.util.Utils;
+import com.skyandforest.reboot_core.util.Utils;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
