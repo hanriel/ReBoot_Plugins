@@ -21,7 +21,7 @@ public class Log {
         send(Utils.addColors("&c" + s));
     }
 
-    private static void send(String s){
+    private static void send(String s) {
         Bukkit.getConsoleSender().sendMessage("[Core Logger] " + s);
     }
 

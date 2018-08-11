@@ -1,6 +1,5 @@
 package com.skyandforest.reboot_core.util;
 
-import com.skyandforest.reboot_core.Core;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.Plugin;
 

@@ -19,7 +19,7 @@ public class ErrorLoggerTask implements Runnable {
         List<String> lines = Utils.newArrayList();
 
         lines.add(" ");
-        lines.add(ChatColor.RED + "#----------------------- RB Shop Errors -----------------------#");
+        lines.add(ChatColor.RED + "#----------------------- RB Core Errors -----------------------#");
         int count = 1;
         for (String error : errorLogger.getErrors()) {
             lines.add(ChatColor.GRAY + "" + (count++) + ") " + ChatColor.WHITE + error);
