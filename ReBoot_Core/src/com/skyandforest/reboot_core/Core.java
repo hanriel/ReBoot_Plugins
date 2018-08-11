@@ -41,21 +41,6 @@ public class Core extends JavaPlugin {
 
         new Catcher();
 
-
-        File f = new File(instance.getDataFolder() + "\\login.log");
-        if (!f.exists()) {
-            f.getParentFile().mkdirs();
-            f.createNewFile();
-        }
-        try {
-            Files.write(
-                    Paths.get(instance.getDataFolder() + "\\login.log"),
-                    ("\n=====ServerStarted===@" + LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd.MM.yy@hh.mm.ss"))).getBytes(),
-                    StandardOpenOption.APPEND);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
         ErrorLogger errorLogger = new ErrorLogger();
         load(errorLogger);
 
@@ -83,53 +68,7 @@ public class Core extends JavaPlugin {
             playersFolder.mkdirs();
         }
 
-        List<PluginConfig> menusList = loadMenus(menusFolder);
-        for (PluginConfig menuConfig : menusList) {
-            try {
-                menuConfig.load();
-            } catch (IOException e) {
-                e.printStackTrace();
-                errorLogger.addError("I/O error while loading the menu \"" + menuConfig.getFileName() + "\". Is the file in use?");
-                continue;
-            } catch (InvalidConfigurationException e) {
-                e.printStackTrace();
-                errorLogger.addError("Invalid YAML configuration for the menu \"" + menuConfig.getFileName() + "\". Please look at the error above, or use an online YAML parser (google is your friend).");
-                continue;
-            }
 
-            MenuData data = MenuSerializer.loadMenuData(menuConfig, errorLogger);
-            ExtendedIconMenu iconMenu = MenuSerializer.loadMenu(menuConfig, data.getTitle(), data.getRows(), errorLogger);
-
-            if (fileNameToMenuMap.containsKey(menuConfig.getFileName())) {
-                errorLogger.addError("Two menus have the same file name \"" + menuConfig.getFileName() + "\" with different cases. There will be problems opening one of these two menus.");
-            }
-            fileNameToMenuMap.put(menuConfig.getFileName(), iconMenu);
-
-            if (data.hasCommands()) {
-                for (String command : data.getCommands()) {
-                    if (!command.isEmpty()) {
-                        if (commandsToMenuMap.containsKey(command)) {
-                            errorLogger.addError("The menus \"" + commandsToMenuMap.get(command).getFileName() + "\" and \"" + menuConfig.getFileName() + "\" have the same command \"" + command + "\". Only one will be opened.");
-                        }
-                        commandsToMenuMap.put(command, iconMenu);
-                    }
-                }
-            }
-
-            iconMenu.setRefreshTicks(data.getRefreshTenths());
-
-            if (data.getOpenActions() != null) {
-                iconMenu.setOpenActions(data.getOpenActions());
-            }
-
-            if (data.hasBoundMaterial() && data.getClickType() != null) {
-                BoundItem boundItem = new BoundItem(iconMenu, data.getBoundMaterial(), data.getClickType());
-                if (data.hasBoundDataValue()) {
-                    boundItem.setRestrictiveData(data.getBoundDataValue());
-                }
-                boundItems.add(boundItem);
-            }
-        }
 
         // Register the BungeeCord plugin channel.
         if (!Bukkit.getMessenger().isOutgoingChannelRegistered(this, "BungeeCord")) {
@@ -202,15 +141,6 @@ public class Core extends JavaPlugin {
 
     static boolean hasPlayerData(String uuid) {
         return new File(instance.getDataFolder() + "\\players\\" + uuid + ".json").exists();
-    }
-
-    static void writeDataLogin(String displayname, Character s) {
-        try {
-            Files.write(Paths.get(instance.getDataFolder() + "\\login.log"), ("\r\n" + s + "@" + displayname + "@" + LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd.MM.yy@hh.mm.ss"))).getBytes(), StandardOpenOption.APPEND);
-        } catch (IOException e) {
-            Log.warning("Error writing \"loginStatistic.log\"!!!");
-            e.printStackTrace();
-        }
     }
 
     public static Core getInstance() {

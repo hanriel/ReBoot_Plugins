@@ -34,7 +34,6 @@ public class _Listener implements Listener {
                 p.setMetadata("exp", new FixedMetadataValue(Core.getInstance(), json.get("exp")));
             }
         }
-        Core.writeDataLogin(p.getDisplayName(), '+');
     }
 
     @EventHandler
@@ -51,6 +50,5 @@ public class _Listener implements Listener {
         saveData.put("lvl", p.getMetadata("lvl").get(0).asInt());
         saveData.put("exp", p.getMetadata("exp").get(0).asInt());
         Core.savePlayerData(saveData, p.getUniqueId().toString());
-        Core.writeDataLogin(p.getDisplayName(), '-');
     }
 }
