@@ -1,6 +1,6 @@
 package com.skyandforest.reboot_shop;
 
-import com.skyandforest.reboot_shop.command.CommandFramework;
+import com.skyandforest.reboot_core.command.CommandFramework;
 import com.skyandforest.reboot_shop.command.CommandHandler;
 import com.skyandforest.reboot_shop.config.AsciiPlaceholders;
 import com.skyandforest.reboot_shop.config.Lang;

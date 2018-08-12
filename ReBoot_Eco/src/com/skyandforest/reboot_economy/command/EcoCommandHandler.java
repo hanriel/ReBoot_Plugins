@@ -11,11 +11,8 @@ import org.bukkit.entity.Player;
 
 public class EcoCommandHandler extends CommandFramework {
 
-    private Eco eco;
-
     public EcoCommandHandler(String label) {
         super(label);
-        eco = Eco.getInstance();
     }
 
     @Override
@@ -45,21 +42,15 @@ public class EcoCommandHandler extends CommandFramework {
 
         if (args[0].equalsIgnoreCase("help")) {
             sender.sendMessage(Eco.CHAT_PREFIX + "Команды:");
-            sender.sendMessage(ChatColor.WHITE + "/" + label + ChatColor.GRAY + " - узнать баланс своего счёта.");
-            sender.sendMessage(ChatColor.WHITE + "/pay" +ChatColor.GRAY + " - передать средства другому игроку.");
+            sender.sendMessage(Utils.addColors("&f/" + label + "&7 - узнать баланс своего счёта."));
+            sender.sendMessage(Utils.addColors("&f/pay&7 - передать средства другому игроку."));
+            sender.sendMessage(Utils.addColors("&f/" + label + " help&7 - справка о командах плагина"));
 
-            if(args.length == 2 && args[1].equalsIgnoreCase("admin")){
-                    CommandValidate.isTrue(
-                            sender.hasPermission(Permissions.COMMAND_ADMIN),
-                            Utils.addColors(Eco.CHAT_PREFIX + "&cУ вас недостаточно прав для выполнения данной команды.")
-                    );
-
-                    sender.sendMessage(ChatColor.WHITE + "/" + label + " reload" + ChatColor.GRAY + " - Перезагрузить конфигурации плагина.");
-                    sender.sendMessage(ChatColor.GREEN + "Версия: " + ChatColor.GRAY + Eco.getInstance().getDescription().getVersion());
-                    sender.sendMessage(ChatColor.GREEN + "Разрабочики: " + ChatColor.GRAY + "CMen_");
+            if (sender.hasPermission(Permissions.COMMAND_ADMIN)) {
+                    sender.sendMessage(Utils.addColors("&f/" + label + " reload&7 - Перезагрузить конфигурации плагина."));
+                    sender.sendMessage(Utils.addColors("&aВерсия: &7" + Eco.getInstance().getDescription().getVersion()));
+                    sender.sendMessage(Utils.addColors("&aРазрабочики: &7CMen_"));
             }
-
-
             return;
         }
 
@@ -68,6 +59,8 @@ public class EcoCommandHandler extends CommandFramework {
                     sender.hasPermission(Permissions.COMMAND_ADMIN),
                     Utils.addColors(Eco.CHAT_PREFIX + "&cУ вас недостаточно прав для выполнения данной команды.")
             );
+
+            Eco.getInstance().load();
             sender.sendMessage(Eco.CHAT_PREFIX + "Конфигурации перезагружены. (наверное без ошибок)");
             return;
         }
@@ -87,6 +80,7 @@ public class EcoCommandHandler extends CommandFramework {
 
             Eco.addBalance(target, amount);
             sender.sendMessage(Utils.addColors(Eco.CHAT_PREFIX + "Счёт игрока успешно пополнен на: &e"+amount+" &aмеди."));
+            target.sendMessage(Utils.addColors(Eco.CHAT_PREFIX + ("&aНа ваш счёт добавленно: &e" + amount + " &aмеди.")));
             return;
         }
 
@@ -105,9 +99,10 @@ public class EcoCommandHandler extends CommandFramework {
 
             Eco.setBalance(target, amount);
             sender.sendMessage(Utils.addColors(Eco.CHAT_PREFIX + "Счёт игрока успешно становлен в: &e"+amount+" &aмеди."));
+            target.sendMessage(Utils.addColors(Eco.CHAT_PREFIX + ("&aВаш счёт установлен в: &e" + amount + " &aмеди.")));
             return;
         }
 
-        sender.sendMessage(ChatColor.RED + "Unknown sub-command \"" + args[0] + "\".");
+        sender.sendMessage(ChatColor.RED + "Неизвестаная саб-команда \"" + args[0] + "\".");
     }
 }

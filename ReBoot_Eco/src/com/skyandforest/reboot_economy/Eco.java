@@ -10,6 +10,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.entity.Player;
 import org.bukkit.metadata.FixedMetadataValue;
+import org.bukkit.plugin.ServicePriority;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.IOException;
@@ -52,7 +53,7 @@ public class Eco extends JavaPlugin {
             getLogger().warning("Unhandled error while reading the values for the configuration! Please inform the developer.");
         }
 
-
+        Bukkit.getServicesManager().register(Eco.class, this, this, ServicePriority.Normal);
 
         if (!Bukkit.getMessenger().isOutgoingChannelRegistered(this, "BungeeCord")) {
             Bukkit.getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
@@ -83,6 +84,15 @@ public class Eco extends JavaPlugin {
         return i;
     }
 
+    public static long[] normBalance(long[] a) {
+        long[] i = new long[3];
+        i[0] = a[0] + asCopper("s", a[1]) + asCopper("g", a[2]);
+        i[2] = i[0] / 10000;
+        i[1] = i[0] / 100 % 100;
+        i[0] %= 100;
+        return i;
+    }
+
     public static boolean hasBalance(Player player, String cur, long amount) {
         long i = player.getMetadata("c").get(0).asLong();
         long am = asCopper(cur, amount);
@@ -90,7 +100,7 @@ public class Eco extends JavaPlugin {
     }
 
     public static String formatBalance(long[] amount){
-        return "&e" + amount[2] + " G&7 " + amount[1]+" S&6 " + amount[0] + " C";
+        return "&6" + amount[0] + " C&7 " + amount[1] + " S&e " + amount[2] + " G";
     }
 
 //

@@ -1,6 +1,6 @@
 name: RBEconomy
 main: com.skyandforest.reboot_economy.Eco
-version: "18.32.7.2"
+version: "18.32.7.3"
 load: STARTUP
 commands:
   eco:

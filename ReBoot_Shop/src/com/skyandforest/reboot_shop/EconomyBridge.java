@@ -10,7 +10,9 @@ public class EconomyBridge {
 	private static Eco economy;
 
 	static boolean setupEconomy() {
-        if (Bukkit.getPluginManager().getPlugin("RBEco") == null) {
+
+        if (Bukkit.getPluginManager().getPlugin("RBEconomy") == null) {
+        	Bukkit.getLogger().warning("Eco not found!");
             return false;
         }
         RegisteredServiceProvider<Eco> rsp = Bukkit.getServicesManager().getRegistration(Eco.class);
@@ -45,9 +47,9 @@ public class EconomyBridge {
 	 */
 	public static void takeMoney(Player player, long amount) {
 		if (!hasValidEconomy()) throw new IllegalStateException("Economy plugin was not found!");
-		if (amount < 0.0) throw new IllegalArgumentException("Invalid amount of money: " + amount);
+		if (amount < 0) throw new IllegalArgumentException("Invalid amount of money: " + amount);
 		
-		economy.addBalance(player, amount*-1);
+		economy.addBalance(player, -amount);
 	}
 	
 	public static void giveMoney(Player player, long amount) {
