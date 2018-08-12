@@ -1,8 +1,0 @@
-name: RBNPC
-main: com.skyandforest.reboot_npc.NPC
-version: 18.21.3.1
-load: STARTUP
-commands:
-  place:
-    description: Телепорт
-    usage: /<command>

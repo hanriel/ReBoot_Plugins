@@ -1,8 +1,0 @@
-name: RBShop
-main: com.skyandforest.reboot_auth.Shop
-version: "18.26.1.0"
-commands:
-   shop:
-      description: Main command for shop system.
-      usage: /<command> (Startup error)
-      aliases: [sh]

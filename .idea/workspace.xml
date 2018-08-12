@@ -3,6 +3,11 @@
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="ReBoot_Core:jar" />
+      <artifact name="ReBoot_Dungeons:jar" />
+      <artifact name="ReBoot_Eco:jar" />
+      <artifact name="ReBoot_GUI:jar" />
+      <artifact name="ReBoot_NPC:jar" />
+      <artifact name="ReBoot_Shop:jar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
@@ -72,88 +77,109 @@
     <session id="-1275517630">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.149" value="1" />
           <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.39" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="b2902a12-ff98-3d50-b04f-bac232f69bd1" value="1" />
-          <entry key="class" value="6" />
-          <entry key="java" value="92" />
-          <entry key="yml" value="22" />
+          <entry key="b2902a12-ff98-3d50-b04f-bac232f69bd1" value="2" />
+          <entry key="class" value="24" />
+          <entry key="java" value="115" />
+          <entry key="yml" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="6" />
-          <entry key="JAVA" value="92" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="YAML" value="22" />
+          <entry key="CLASS" value="24" />
+          <entry key="JAVA" value="115" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="YAML" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="23" />
-          <entry key="java" value="3114" />
-          <entry key="yml" value="208" />
+          <entry key="java" value="4159" />
+          <entry key="yml" value="224" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3114" />
+          <entry key="JAVA" value="4159" />
           <entry key="PLAIN_TEXT" value="23" />
-          <entry key="YAML" value="208" />
+          <entry key="YAML" value="224" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ReBoot_Plugins" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="124">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="155">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/command/CommandHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="73" selection-end-column="53" />
+            <state relative-caret-position="595">
+              <caret line="35" column="76" lean-forward="true" selection-start-line="35" selection-start-column="76" selection-end-line="35" selection-end-column="76" />
               <folding>
-                <element signature="e#895#896#0" expanded="true" />
-                <element signature="e#923#924#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#957#958#0" expanded="true" />
+                <element signature="e#985#986#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/Eco.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="91" column="38" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="38" />
-              <folding>
-                <element signature="e#3403#3404#0" expanded="true" />
-                <element signature="e#3434#3435#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/command/EcoCommandHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/plugin.yml">
+        <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/command/EcoCommandHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state relative-caret-position="297">
+              <caret line="101" column="121" lean-forward="true" selection-start-line="101" selection-start-column="121" selection-end-line="101" selection-end-column="121" />
+              <folding>
+                <element signature="e#488#489#0" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/command/PayCommandHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="394">
+              <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="144" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/Shop.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-132">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#8534#8535#0" expanded="true" />
+                <element signature="e#8562#8563#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/Permissions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="50" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -175,7 +201,6 @@
       <list>
         <option value="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/config/AsciiPlaceholders.java" />
         <option value="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/config/yaml/SpecialConfig.java" />
-        <option value="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/EconomyBridge.java" />
         <option value="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/task/ErrorLoggerTask.java" />
         <option value="$PROJECT_DIR$/ReBoot_NPC/src/com/saf/medievalnpc/_CommandExecutor.java" />
         <option value="$PROJECT_DIR$/ReBoot_NPC/src/com/saf/medievalnpc/_Listener.java" />
@@ -199,11 +224,8 @@
         <option value="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/command/PayCommandHandler.java" />
         <option value="$PROJECT_DIR$/ReBoot_GUI/src/plugin.yml" />
         <option value="$PROJECT_DIR$/ReBoot_NPC/src/plugin.yml" />
-        <option value="$PROJECT_DIR$/ReBoot_Shop/resources/plugin.yml" />
-        <option value="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/command/CommandHandler.java" />
         <option value="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/config/Configs.java" />
         <option value="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/config/Settings.java" />
-        <option value="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/util/Utils.java" />
         <option value="F:/ReBoot/SAF — копия/plugins/RBCore/players/b2902a12-ff98-3d50-b04f-bac232f69bd1" />
         <option value="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/PlayerDataFramework.java" />
         <option value="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/Catcher.java" />
@@ -211,15 +233,21 @@
         <option value="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/_Listener.java" />
         <option value="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/playerData/PlayerDataFramework.java" />
         <option value="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/Auth.java" />
-        <option value="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/Shop.java" />
         <option value="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/Core.java" />
-        <option value="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/command/CoreCommandHandler.java" />
-        <option value="$PROJECT_DIR$/ReBoot_Core/src/plugin.yml" />
         <option value="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/config/AsciiPlaceholders.java" />
-        <option value="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/Eco.java" />
         <option value="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/internal/Variable.java" />
-        <option value="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/command/EcoCommandHandler.java" />
         <option value="$PROJECT_DIR$/ReBoot_Eco/src/plugin.yml" />
+        <option value="$PROJECT_DIR$/ReBoot_Core/src/plugin.yml" />
+        <option value="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/Shop.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/command/CoreCommandHandler.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/EconomyBridge.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Shop/resources/plugin.yml" />
+        <option value="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/Eco.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/util/Utils.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/exception/FormatException.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/util/Utils.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/command/CommandHandler.java" />
+        <option value="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/command/EcoCommandHandler.java" />
       </list>
     </option>
   </component>
@@ -229,17 +257,20 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="309" />
-    <option name="width" value="1278" />
-    <option name="height" value="867" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="1320" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <autoscrollToSource ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -265,31 +296,23 @@
               <item name="reboot_economy" type="462c0819:PsiDirectoryNode" />
               <item name="command" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ReBoot_Plugins" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReBoot_Eco" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="reboot_economy" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/Projects/Code/Java/ReBoot_Plugins/ReBoot_Eco/src/com/skyandforest/reboot_economy/command/EcoCommandHandler.java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/spigot.jar!/" />
+    <property name="last_opened_file_path" value="F:/ReBoot/SAF — копия/spigot.jar" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.skyandforest.reboot_core.exception" />
       <recent name="com.skyandforest.reboot_economy.config" />
     </key>
   </component>
@@ -305,6 +328,26 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="JarApplication" factoryName="JAR Application">
+      <option name="JAR_PATH" value="F:/ReBoot/SAF — копия/spigot.jar" />
+      <option name="VM_PARAMETERS" value="-Xmx1024M -Dfile.encoding=CP866" />
+      <option name="PROGRAM_PARAMETERS" value="nogui" />
+      <option name="WORKING_DIRECTORY" value="F:\ReBoot\SAF — копия" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="ReBoot_Core:jar" />
+          <artifact name="ReBoot_Dungeons:jar" />
+          <artifact name="ReBoot_Eco:jar" />
+          <artifact name="ReBoot_GUI:jar" />
+          <artifact name="ReBoot_NPC:jar" />
+          <artifact name="ReBoot_Shop:jar" />
+        </option>
+      </method>
+    </configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6826b572-8839-46b8-8a6f-ee669dbe8379" name="Default Changelist" comment="" />
@@ -315,12 +358,15 @@
       <workItem from="1533710797391" duration="103000" />
       <workItem from="1533710903640" duration="1973000" />
       <workItem from="1533735273909" duration="4935000" />
-      <workItem from="1533996708177" duration="25895000" />
+      <workItem from="1533996708177" duration="26017000" />
+      <workItem from="1534068712931" duration="5048000" />
+      <workItem from="1534075808893" duration="664000" />
+      <workItem from="1534091010178" duration="9763000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32906000" />
+    <option name="totallyTimeSpent" value="48503000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -335,22 +381,22 @@
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973404" visible="true" weight="0.17159383" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49798116" visible="true" weight="0.17802057" />
       <window_info id="Structure" order="1" sideWeight="0.50265956" side_tool="true" weight="0.17159383" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32978722" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.34574467" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32978722" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" weight="0.32978722" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32978722" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32978722" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32845744" />
+      <window_info anchor="bottom" id="Favorites" order="11" sideWeight="0.50201887" weight="0.21542554" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -370,127 +416,11 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
   </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ReBoot_NPC/src/com/skyandforest/reboot_npc/_CommandExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1151">
-          <caret line="188" column="29" lean-forward="true" selection-start-line="188" selection-start-column="29" selection-end-line="188" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_NPC/src/com/skyandforest/reboot_npc/_Listener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="47" column="58" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/EconomyBridge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Collection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/VersionUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/internal/CachedGetters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/Storage/Libs/spigot-api-1.12.2-R0.1-SNAPSHOT-shaded.jar!/org/bukkit/plugin/java/JavaPlugin.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="73" column="42" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/Storage/Libs/craftbukkit-1.12.2-R0.1-SNAPSHOT.jar!/io/netty/handler/logging/LogLevel.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/Permissions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_GUI/src/com/skyandforest/reboot_gui/_Listener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="82" column="68" selection-start-line="82" selection-start-column="68" selection-end-line="82" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_GUI/src/com/skyandforest/reboot_gui/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/internal/Variable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-          <folding>
-            <element signature="e#315#316#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/Permissions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/command/CommandFramework.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ReBoot_NPC/src/com/skyandforest/reboot_npc/NPC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -515,13 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/command/PayCommandHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="41" column="53" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ReBoot_GUI/src/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -539,24 +462,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_Shop/resources/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ReBoot_NPC/src/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="37" lean-forward="true" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spigot.jar!/org/bukkit/plugin/java/JavaPlugin.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="235" column="24" selection-start-line="235" selection-start-column="16" selection-end-line="235" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -571,13 +480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/util/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="65" column="13" lean-forward="true" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -616,49 +518,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/ReBoot/SAF — копия/plugins/RBCore/players/b2902a12-ff98-3d50-b04f-bac232f69bd1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="51" lean-forward="true" selection-start-column="51" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/Catcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/Catcher.java" />
     <entry file="file://$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/_Listener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
           <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/ErrorLogger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/ErrorLoggerTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/ErrorLogger.java" />
+    <entry file="file://$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/ErrorLoggerTask.java" />
     <entry file="file://$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/playerData/PlayerDataFramework.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -673,13 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/Shop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/Core.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="593">
@@ -687,89 +549,243 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/command/CoreCommandHandler.java">
+    <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/config/AsciiPlaceholders.java" />
+    <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/internal/Variable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="493">
+          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ReBoot_Core/src/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/config/AsciiPlaceholders.java">
+    <entry file="file://F:/ReBoot/SAF — копия/plugins/RBCore/players/b2902a12-ff98-3d50-b04f-bac232f69bd1">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        <state>
+          <caret column="51" lean-forward="true" selection-start-column="51" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/command/CommandHandler.java">
+    <entry file="jar://$PROJECT_DIR$/lib/spigot.jar!/org/bukkit/plugin/java/JavaPluginLoader.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="73" selection-end-column="53" />
+        <state relative-caret-position="232">
+          <caret line="335" selection-start-line="335" selection-end-line="335" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spigot.jar!/org/bukkit/plugin/SimplePluginManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="353" selection-start-line="353" selection-end-line="353" />
           <folding>
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#15000#15001#0" expanded="true" />
+            <element signature="e#15075#15076#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/Eco.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="91" column="38" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="38" />
-          <folding>
-            <element signature="e#3403#3404#0" expanded="true" />
-            <element signature="e#3434#3435#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/internal/Variable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#154#155#0" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="e#880#881#0" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#1403#1404#0" expanded="true" />
-            <element signature="e#1435#1436#0" expanded="true" />
-            <element signature="e#1466#1467#0" expanded="true" />
-            <element signature="e#1493#1494#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/command/EcoCommandHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Shop/resources/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spigot.jar!/org/bukkit/plugin/java/JavaPlugin.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="251" selection-start-line="251" selection-end-line="251" />
+          <folding>
+            <element signature="e#8408#8409#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/craftbukkit.jar!/org/bukkit/craftbukkit/v1_12_R1/CraftServer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="631" column="27" selection-start-line="631" selection-start-column="27" selection-end-line="631" selection-end-column="27" />
+          <folding>
+            <element signature="e#25503#25504#0" expanded="true" />
+            <element signature="e#25546#25547#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spigot.jar!/org/bukkit/Bukkit.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="188" selection-start-line="188" selection-end-line="188" />
+          <folding>
+            <element signature="e#5097#5098#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spigot.jar!/org/bukkit/plugin/SimpleServicesManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="198" selection-start-line="198" selection-end-line="198" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spigot.jar!/org/bukkit/plugin/RegisteredServiceProvider.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#798#799#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/craftbukkit.jar!/net/minecraft/server/v1_12_R1/ItemStack.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="532" selection-start-line="532" selection-end-line="532" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/craftbukkit.jar!/org/bukkit/craftbukkit/v1_12_R1/inventory/CraftItemStack.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="290" selection-start-line="290" selection-end-line="290" />
+          <folding>
+            <element signature="e#10647#10648#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/craftbukkit.jar!/org/bukkit/craftbukkit/v1_12_R1/inventory/CraftMetaItem.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="611" column="25" selection-start-line="611" selection-start-column="25" selection-end-line="611" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/Eco.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="87" column="31" lean-forward="true" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/EconomyBridge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/util/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/exception/FormatException.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/util/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="265" column="47" selection-end-line="295" />
+          <folding>
+            <element signature="e#7377#7378#0" expanded="true" />
+            <element signature="e#7419#7420#0" expanded="true" />
+            <element signature="e#6890#6922#0" expanded="true" />
+            <element signature="e#8232#8233#0" expanded="true" />
+            <element signature="e#8259#8260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/command/CoreCommandHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="34" column="78" lean-forward="true" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/Permissions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/Permissions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/Permissions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/command/CommandHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="76" lean-forward="true" selection-start-line="35" selection-start-column="76" selection-end-line="35" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#957#958#0" expanded="true" />
+            <element signature="e#985#986#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/Shop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-132">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8534#8535#0" expanded="true" />
+            <element signature="e#8562#8563#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/command/PayCommandHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/command/EcoCommandHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="101" column="121" lean-forward="true" selection-start-line="101" selection-start-column="121" selection-end-line="101" selection-end-column="121" />
+          <folding>
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

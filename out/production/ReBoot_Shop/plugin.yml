@@ -1,9 +1,0 @@
-name: RBShop
-main: com.skyandforest.reboot_shop.Shop
-version: "18.26.3.26"
-load: POSTWORLD
-commands:
-   shop:
-      description: Main command for shop system.
-      usage: /<command> (Startup error)
-      aliases: [sh, s]

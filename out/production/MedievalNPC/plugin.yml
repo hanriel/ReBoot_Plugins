@@ -1,8 +1,0 @@
-name: MedievalNPC
-main: com.saf.medievalnpc.NPC
-version: 18.21.3.1
-load: STARTUP
-commands:
-  place:
-    description: Телепорт
-    usage: /<command>

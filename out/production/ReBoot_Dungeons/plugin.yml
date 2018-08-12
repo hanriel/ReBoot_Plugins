@@ -1,7 +1,0 @@
-name: ReBootDungeon
-main: com.skyandforest.reboot_dungeons.Dungeons
-version: "18.30.3.0"
-commands:
-   dun:
-      description: Main command for dungeons system.
-      usage: /<command> (Startup error)
