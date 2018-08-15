@@ -54,6 +54,8 @@ public class CommandHandler extends CommandFramework implements Listener {
                     Utils.addColors(Eco.CHAT_PREFIX + "&cУ вас недостаточно прав для выполнения данной команды.")
             );
 
+            CommandValidate.minLength(args, 2, "Usage: /" + label + " sell <copper> <silver> <gold>");
+
             CommandFramework.CommandValidate.isTrue(
                     sender instanceof Player,
                     Utils.addColors(Eco.CHAT_PREFIX + "&cОператор, ты бомж, у тебя нет денег!")
@@ -96,18 +98,16 @@ public class CommandHandler extends CommandFramework implements Listener {
         }
 
         if (args[0].equalsIgnoreCase("help")) {
-            CommandValidate.isTrue(
-                    sender.hasPermission(Permissions.COMMAND_BASE + "help"),
-                    Utils.addColors(Eco.CHAT_PREFIX + "&cУ вас недостаточно прав для выполнения данной команды.")
-            );
+            sender.sendMessage(Shop.CHAT_PREFIX + "Команды:");
+            sender.sendMessage(Utils.addColors("&f/" + label + "&7 - открыть меню магазина."));
+            sender.sendMessage(Utils.addColors("&f/" + label + " sell <copper> <silver> <gold>&7 - выставить предмет нахдящийся в руке на продажу."));
+            sender.sendMessage(Utils.addColors("&f/" + label + " help&7 - справка о командах плагина"));
 
-
-            sender.sendMessage(Shop.CHAT_PREFIX);
-            sender.sendMessage(ChatColor.GREEN + "Version: " + ChatColor.GRAY + Shop.getInstance().getDescription().getVersion());
-            sender.sendMessage(ChatColor.GREEN + "Developer: " + ChatColor.GRAY + "CMen_");
-            sender.sendMessage("Commands:");
-            sender.sendMessage(ChatColor.WHITE + "/" + label + " reload" + ChatColor.GRAY + " - Reloads the plugin.");
-            sender.sendMessage(ChatColor.WHITE + "/" + label + ChatColor.GRAY + " - Opens a shop for a player.");
+            if (sender.hasPermission(Permissions.COMMAND_BASE + "help")) {
+                sender.sendMessage(Utils.addColors("&f/" + label + " reload&7 - Перезагрузить конфигурации плагина."));
+                sender.sendMessage(Utils.addColors("&aВерсия: &7" + Shop.getInstance().getDescription().getVersion()));
+                sender.sendMessage(Utils.addColors("&aРазрабочики: &7CMen_"));
+            }
             return;
         }
 
@@ -193,14 +193,20 @@ public class CommandHandler extends CommandFramework implements Listener {
                 String lore = item.getItemMeta().getLore().get(item.getItemMeta().getLore().size() - 4);
                 String[] cost = lore.split(" ");
                 long[] costArray = new long[3];
-                costArray[0] = Long.parseLong(cost[0].substring(1));
-                costArray[1] = Long.parseLong(cost[2].substring(1));
-                costArray[2] = Long.parseLong(cost[4].substring(1));
+                costArray[0] = Long.parseLong(cost[0].substring(2));
+                costArray[1] = Long.parseLong(cost[2].substring(2));
+                costArray[2] = Long.parseLong(cost[4].substring(2));
 
                 costArray[0] = Eco.asCopper("g", costArray[0]);
                 costArray[1] = Eco.asCopper("s", costArray[1]);
 
                 long price = costArray[0] + costArray[1] + costArray[2];
+
+                item.getItemMeta().getLore().remove(item.getItemMeta().getLore().size() - 1);
+                item.getItemMeta().getLore().remove(item.getItemMeta().getLore().size() - 1);
+                item.getItemMeta().getLore().remove(item.getItemMeta().getLore().size() - 1);
+                item.getItemMeta().getLore().remove(item.getItemMeta().getLore().size() - 1);
+                item.getItemMeta().getLore().remove(item.getItemMeta().getLore().size() - 1);
 
                 player.sendMessage(String.valueOf(price));
                 doPayment(event.getPlayer(), price, item);
@@ -248,6 +254,10 @@ public class CommandHandler extends CommandFramework implements Listener {
     private void doPayment(Player player, long price, ItemStack item) {
         if (Eco.hasBalance(player, "c", price)) {
             if (player.getInventory().firstEmpty() != -1) {
+                item.getItemMeta().getLore().remove(item.getItemMeta().getLore().size()-1);
+                item.getItemMeta().getLore().remove(item.getItemMeta().getLore().size()-1);
+                item.getItemMeta().getLore().remove(item.getItemMeta().getLore().size()-1);
+                item.getItemMeta().getLore().remove(item.getItemMeta().getLore().size()-1);
                 player.getInventory().addItem(item);
                 EconomyBridge.takeMoney(player, price);
                 Shop.getiList().remove(item);

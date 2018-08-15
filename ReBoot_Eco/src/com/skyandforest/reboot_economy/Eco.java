@@ -100,7 +100,7 @@ public class Eco extends JavaPlugin {
     }
 
     public static String formatBalance(long[] amount){
-        return "&6" + amount[0] + " C&7 " + amount[1] + " S&e " + amount[2] + " G";
+        return "&6" + amount[0] + " C &7" + amount[1] + " S &e" + amount[2] + " G";
     }
 
 //
