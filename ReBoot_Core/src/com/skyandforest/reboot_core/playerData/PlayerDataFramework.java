@@ -35,49 +35,17 @@ public class PlayerDataFramework {
         } catch (IOException | ParseException ignored) {
         }
 
-        Connection conn = null;
-        Statement stmt = null;
-        ResultSet rs = null;
-
-        String query = "SELECT units FROM user WHERE uuid='" + player.getUniqueId().toString() + "'";
-
+        MySQL mySQL = new MySQL();
+        mySQL.connect();
+        ResultSet resultSet = mySQL.query(SQLQuerys.GET_USER_DATA + player.getUniqueId().toString());
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://212.33.246.122/reboot?user=CMen&password=Aazz0909");
-            stmt = conn.createStatement();
-
-            rs = stmt.executeQuery(query);
-
-            while (rs.next()) {
-                int userU = rs.getInt("units");
-                Bukkit.getLogger().info(String.valueOf(userU));
+            if(resultSet.next()){
+                player.setMetadata("c", new FixedMetadataValue(Core.getInstance(), resultSet.getInt(1)));
+                player.setMetadata("d", new FixedMetadataValue(Core.getInstance(), resultSet.getInt(2)));
             }
-
-//            if (stmt.execute(query)) {
-//                rs = stmt.getResultSet();
-//                Bukkit.getLogger().info(rs.getString(1));
-//            }
-        } catch (SQLException ex) {
-            System.out.println("SQLException: " + ex.getMessage());
-            System.out.println("SQLState: " + ex.getSQLState());
-            System.out.println("VendorError: " + ex.getErrorCode());
-        } finally {
-            if (rs != null) {
-                try {
-                    rs.close();
-                } catch (SQLException ignored) {
-                }
-                rs = null;
-            }
-
-            if (stmt != null) {
-                try {
-                    stmt.close();
-                } catch (SQLException ignored) {
-                }
-                stmt = null;
-            }
+        } catch (SQLException e) {
+            mySQL.runException(e);
         }
-
     }
 
     public static void saveData(HashMap<String, Object> a, Player player) {
