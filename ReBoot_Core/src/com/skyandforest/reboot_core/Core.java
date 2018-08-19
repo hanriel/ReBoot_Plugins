@@ -2,6 +2,7 @@ package com.skyandforest.reboot_core;
 
 import com.skyandforest.reboot_core.command.CommandFramework;
 import com.skyandforest.reboot_core.command.CoreCommandHandler;
+import com.skyandforest.reboot_core.playerData.MySQL;
 import com.skyandforest.reboot_core.playerData.PlayerDataFramework;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -12,22 +13,29 @@ import java.io.File;
 
 public class Core extends JavaPlugin {
 
-    public static final String CHAT_PREFIX = ChatColor.AQUA + "[" + ChatColor.GREEN + "Core" + ChatColor.AQUA + "] " + ChatColor.GREEN;
+    public static final String CHAT_PREFIX = "&e[&4Core&e]&r ";
 
     private static Core instance;
 
     @Override
     public void onEnable() {
         if (instance != null) {
-            Log.warning("Please do not use /reload or plugin reloaders. Do \"/rb reload\" instead.");
+            getLogger().warning("Please do not use /reload or plugin reloaders. Do \"/rb reload\" instead.");
             return;
         }
         instance = this;
+
+        new MySQL();
 
         CommandFramework.register(this, new CoreCommandHandler("core"));
         Core.getInstance().getServer().getPluginManager().registerEvents(new _Listener(), instance);
 
         load();
+    }
+
+    @Override
+    public void onDisable() {
+
     }
 
     public void load() {

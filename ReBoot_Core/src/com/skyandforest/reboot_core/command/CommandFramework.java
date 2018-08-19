@@ -7,9 +7,6 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.command.PluginCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
-/**
- * Wrapper for the default command executor.
- */
 public abstract class CommandFramework implements CommandExecutor {
 
     /***************************************************

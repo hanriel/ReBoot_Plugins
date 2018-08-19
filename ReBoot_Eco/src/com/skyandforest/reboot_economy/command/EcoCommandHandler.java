@@ -78,9 +78,8 @@ public class EcoCommandHandler extends CommandFramework {
 
             long amount = Eco.asCopper(args[3],(long) CommandValidate.getPositiveDouble(args[2]));
 
-            Eco.addBalance(target, amount);
+            Eco.addBalance(target, amount, true);
             sender.sendMessage(Utils.addColors(Eco.CHAT_PREFIX + "Счёт игрока успешно пополнен на: &e"+amount+" &aмеди."));
-            target.sendMessage(Utils.addColors(Eco.CHAT_PREFIX + ("&aНа ваш счёт добавленно: &e" + amount + " &aмеди.")));
             return;
         }
 

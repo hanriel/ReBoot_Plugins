@@ -2,15 +2,11 @@ package com.skyandforest.reboot_core.playerData;
 
 import java.sql.*;
 
-class MySQL {
+public class MySQL {
 
     private Connection connection = null;
 
-    MySQL() {
-
-    }
-
-    boolean connect(){
+    private boolean connect(){
         try {
             connection = DriverManager.getConnection("jdbc:mysql://212.33.246.122/reboot?user=CMen&password=Aazz0909");
             return connection.isValid(30);
@@ -20,17 +16,16 @@ class MySQL {
         }
     }
 
-    boolean disconnect(){
+    private void disconnect(){
         try {
             connection.close();
-            return !connection.isValid(30);
         } catch (SQLException e) {
             runException(e);
-            return false;
         }
     }
 
-    ResultSet query(String query){
+    public ResultSet query(String query){
+        connect();
         try {
             Statement stmt = connection.createStatement();
             ResultSet result = stmt.executeQuery(query);
@@ -38,7 +33,10 @@ class MySQL {
         } catch (SQLException e) {
             runException(e);
             return null;
+        } finally {
+            disconnect();
         }
+
     }
 
     Connection getConnection(){

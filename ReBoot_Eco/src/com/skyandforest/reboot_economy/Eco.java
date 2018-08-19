@@ -2,9 +2,11 @@ package com.skyandforest.reboot_economy;
 
 import com.skyandforest.reboot_core.command.CommandFramework;
 import com.skyandforest.reboot_core.Core;
+import com.skyandforest.reboot_core.util.Utils;
 import com.skyandforest.reboot_economy.command.*;
 import com.skyandforest.reboot_economy.config.*;
 import com.skyandforest.reboot_economy.config.YAML.PluginConfig;
+import com.skyandforest.reboot_economy.listener.BreakBlockListener;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.InvalidConfigurationException;
@@ -34,6 +36,8 @@ public class Eco extends JavaPlugin {
 
         CommandFramework.register(this, new EcoCommandHandler("eco"));
         CommandFramework.register(this, new PayCommandHandler("pay"));
+
+        Eco.getInstance().getServer().getPluginManager().registerEvents(new BreakBlockListener(), instance);
 
         load();
     }
@@ -66,9 +70,13 @@ public class Eco extends JavaPlugin {
         return amount;
     }
 
-    public static void addBalance(Player player, long amount) {
+    public static void addBalance(Player player, long amount, boolean notify) {
         long i = player.getMetadata("c").get(0).asInt() + amount;
         player.setMetadata("c", new FixedMetadataValue(Core.getInstance(), i));
+        if(notify) {
+            long[] bal = normBalance(new long[] {amount, 0,0});
+            player.sendMessage(Utils.addColors(CHAT_PREFIX + ("&aНа ваш счёт добавленно: " + formatBalance(bal))));
+        }
     }
 
     public static void setBalance(Player player, long amount) {
