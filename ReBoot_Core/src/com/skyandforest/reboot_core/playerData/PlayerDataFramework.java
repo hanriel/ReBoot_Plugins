@@ -65,7 +65,7 @@ public class PlayerDataFramework {
     public static void uploadData(Player player) {
         try {
             String statement = "UPDATE `user` SET `units`=" + player.getMetadata("c").get(0).asLong() +
-                    ",`bits`=" + player.getMetadata("d").get(0).asLong();
+                    ",`bits`=" + player.getMetadata("d").get(0).asLong()+" WHERE `uuid`='"+ player.getUniqueId().toString()+"'";
             Statement st = mySQL.getConnection().createStatement();
             st.executeUpdate(statement);
         } catch (SQLException e) {

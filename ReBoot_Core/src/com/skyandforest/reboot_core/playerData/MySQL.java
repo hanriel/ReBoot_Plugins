@@ -6,9 +6,13 @@ public class MySQL {
 
     private Connection connection = null;
 
+    public MySQL(){
+        connect();
+    }
+
     private boolean connect(){
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://212.33.246.122/reboot?user=CMen&password=Aazz0909");
+            connection = DriverManager.getConnection("jdbc:mysql://212.33.246.122/reboot?user=CMen&password=Aazz0909&autoReconnect=true");
             return connection.isValid(30);
         } catch (SQLException e) {
             runException(e);
@@ -25,7 +29,6 @@ public class MySQL {
     }
 
     public ResultSet query(String query){
-        connect();
         try {
             Statement stmt = connection.createStatement();
             ResultSet result = stmt.executeQuery(query);
@@ -33,10 +36,7 @@ public class MySQL {
         } catch (SQLException e) {
             runException(e);
             return null;
-        } finally {
-            disconnect();
         }
-
     }
 
     Connection getConnection(){

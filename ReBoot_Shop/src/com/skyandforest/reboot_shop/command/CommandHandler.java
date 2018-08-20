@@ -5,6 +5,7 @@ import com.skyandforest.reboot_core.util.Utils;
 import com.skyandforest.reboot_economy.Eco;
 import com.skyandforest.reboot_shop.*;
 import com.skyandforest.reboot_shop.task.ErrorLoggerTask;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.DyeColor;
 import org.bukkit.Material;
@@ -34,7 +35,7 @@ public class CommandHandler extends CommandFramework implements Listener {
         if (args.length == 0) {
             CommandValidate.isTrue(
                     sender.hasPermission(Permissions.COMMAND_BASE + "shop"),
-                    Utils.addColors(Eco.CHAT_PREFIX + "&cУ вас недостаточно прав для выполнения данной команды.")
+                    Utils.addColors(Shop.CHAT_PREFIX + "&cУ вас недостаточно прав для выполнения данной команды.")
             );
             Player target;
 
@@ -51,18 +52,23 @@ public class CommandHandler extends CommandFramework implements Listener {
         if (args[0].equalsIgnoreCase("sell")) {
             CommandValidate.isTrue(sender.hasPermission(
                     Permissions.COMMAND_BASE + "pay"),
-                    Utils.addColors(Eco.CHAT_PREFIX + "&cУ вас недостаточно прав для выполнения данной команды.")
+                    Utils.addColors(Shop.CHAT_PREFIX + "&cУ вас недостаточно прав для выполнения данной команды.")
             );
 
             CommandValidate.minLength(args, 2, "Usage: /" + label + " sell <copper> <silver> <gold>");
 
             CommandFramework.CommandValidate.isTrue(
                     sender instanceof Player,
-                    Utils.addColors(Eco.CHAT_PREFIX + "&cОператор, ты бомж, у тебя нет денег!")
+                    Utils.addColors(Shop.CHAT_PREFIX + "&cОператор, ты бомж, у тебя нет денег!")
             );
 
             ItemStack itemStack;
             itemStack = ((Player) sender).getInventory().getItemInMainHand().clone();
+
+            CommandValidate.isTrue(
+                    itemStack.getType() != Material.AIR,
+                    Utils.addColors(Shop.CHAT_PREFIX + "&cСер, у вас же пусто в руке!")
+            );
 
             sender.sendMessage(Shop.CHAT_PREFIX + ChatColor.GREEN + "Выставлено на продажу!");
 
@@ -192,24 +198,20 @@ public class CommandHandler extends CommandFramework implements Listener {
 
                 String lore = item.getItemMeta().getLore().get(item.getItemMeta().getLore().size() - 4);
                 String[] cost = lore.split(" ");
+                String targ = item.getItemMeta().getLore().get(item.getItemMeta().getLore().size() - 3);
+                String[] tar = targ.split(" ");
+                Player target = Bukkit.getPlayerExact(tar[tar.length-1].substring(2));
+
                 long[] costArray = new long[3];
                 costArray[0] = Long.parseLong(cost[0].substring(2));
                 costArray[1] = Long.parseLong(cost[2].substring(2));
                 costArray[2] = Long.parseLong(cost[4].substring(2));
 
-                costArray[0] = Eco.asCopper("g", costArray[0]);
                 costArray[1] = Eco.asCopper("s", costArray[1]);
+                costArray[2] = Eco.asCopper("g", costArray[2]);
 
                 long price = costArray[0] + costArray[1] + costArray[2];
-
-                item.getItemMeta().getLore().remove(item.getItemMeta().getLore().size() - 1);
-                item.getItemMeta().getLore().remove(item.getItemMeta().getLore().size() - 1);
-                item.getItemMeta().getLore().remove(item.getItemMeta().getLore().size() - 1);
-                item.getItemMeta().getLore().remove(item.getItemMeta().getLore().size() - 1);
-                item.getItemMeta().getLore().remove(item.getItemMeta().getLore().size() - 1);
-
-                player.sendMessage(String.valueOf(price));
-                doPayment(event.getPlayer(), price, item);
+                doPayment(event.getPlayer(), price, item, target);
 
             } else if ((pos >= 6 && pos <= 8) || (pos >= 15 && pos <= 17) || (pos >= 24 && pos <= 26)) {
                 event.setWillClose(false);
@@ -251,15 +253,25 @@ public class CommandHandler extends CommandFramework implements Listener {
         menu.open(player);
     }
 
-    private void doPayment(Player player, long price, ItemStack item) {
+    private void doPayment(Player player, long price, ItemStack item, Player target) {
         if (Eco.hasBalance(player, "c", price)) {
             if (player.getInventory().firstEmpty() != -1) {
-                item.getItemMeta().getLore().remove(item.getItemMeta().getLore().size()-1);
-                item.getItemMeta().getLore().remove(item.getItemMeta().getLore().size()-1);
-                item.getItemMeta().getLore().remove(item.getItemMeta().getLore().size()-1);
-                item.getItemMeta().getLore().remove(item.getItemMeta().getLore().size()-1);
-                player.getInventory().addItem(item);
+                ItemStack paItem = item;
+                ItemMeta iMeta = paItem.getItemMeta();
+                List<String> iLore = iMeta.getLore();
+
+//                iLore.subList(iLore.size() - 5, iLore.size());
+                iLore.remove(iLore.size() - 1);
+                iLore.remove(iLore.size() - 1);
+                iLore.remove(iLore.size() - 1);
+                iLore.remove(iLore.size() - 1);
+                iLore.remove(iLore.size() - 1);
+
+                iMeta.setLore(iLore);
+                paItem.setItemMeta(iMeta);
+                player.getInventory().addItem(paItem);
                 EconomyBridge.takeMoney(player, price);
+                EconomyBridge.giveMoney(target, price);
                 Shop.getiList().remove(item);
             } else {
                 player.sendMessage(Shop.getLang().no_slots);
