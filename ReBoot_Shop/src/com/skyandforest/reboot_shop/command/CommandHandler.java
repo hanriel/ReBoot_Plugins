@@ -188,6 +188,9 @@ public class CommandHandler extends CommandFramework implements Listener {
     }
 
     private void confirmPay(Player player, ItemStack item) {
+
+
+
         ShopMenu menu = new ShopMenu("ConfPay", 27, event -> {
             event.setWillDestroy(true);
             event.setWillClose(true);
@@ -282,7 +285,7 @@ public class CommandHandler extends CommandFramework implements Listener {
     }
 
     private ItemStack getILeft() {
-        ItemStack item = new ItemStack(Material.BANNER, 1, (short) 15);
+        ItemStack item = new ItemStack(Material.WHITE_BANNER, 1, (short) 15);
         BannerMeta m = (BannerMeta) item.getItemMeta();
         m.setDisplayName(Utils.addColors("&3<---"));
         List<String> lore = new ArrayList<>();
@@ -304,7 +307,7 @@ public class CommandHandler extends CommandFramework implements Listener {
     }
 
     private ItemStack getIRight() {
-        ItemStack item = new ItemStack(Material.BANNER, 1, (short) 15);
+        ItemStack item = new ItemStack(Material.WHITE_BANNER, 1, (short) 15);
         BannerMeta m = (BannerMeta) item.getItemMeta();
         m.setDisplayName(Utils.addColors("&3--->"));
         List<String> lore = new ArrayList<>();
@@ -326,7 +329,7 @@ public class CommandHandler extends CommandFramework implements Listener {
     }
 
     private ItemStack getISort() {
-        ItemStack item = new ItemStack(Material.BANNER, 1, (short) 15);
+        ItemStack item = new ItemStack(Material.WHITE_BANNER, 1, (short) 15);
         BannerMeta m = (BannerMeta) item.getItemMeta();
         m.setDisplayName(Utils.addColors("&3Sort"));
         List<String> lore = new ArrayList<>();
@@ -348,7 +351,7 @@ public class CommandHandler extends CommandFramework implements Listener {
     }
 
     private ItemStack getIDeny() {
-        ItemStack item = new ItemStack(Material.STAINED_GLASS_PANE, 1, (short) 14);
+        ItemStack item = new ItemStack(Material.RED_STAINED_GLASS_PANE, 1);
         ItemMeta imDeny = item.getItemMeta();
         imDeny.setDisplayName(Utils.addColors("&4Deny"));
         item.setItemMeta(imDeny);
@@ -356,7 +359,7 @@ public class CommandHandler extends CommandFramework implements Listener {
     }
 
     private ItemStack getIAccept() {
-        ItemStack item = new ItemStack(Material.STAINED_GLASS_PANE, 1, (short) 5);
+        ItemStack item = new ItemStack(Material.GREEN_STAINED_GLASS_PANE, 1);
         ItemMeta imAccept = item.getItemMeta();
         imAccept.setDisplayName(Utils.addColors("&aAccept"));
         item.setItemMeta(imAccept);
@@ -364,7 +367,7 @@ public class CommandHandler extends CommandFramework implements Listener {
     }
 
     private ItemStack getIBlock() {
-        ItemStack itemBlock = new ItemStack(Material.STAINED_GLASS_PANE, 1, (short) 15);
+        ItemStack itemBlock = new ItemStack(Material.LIGHT_GRAY_STAINED_GLASS_PANE, 1);
         ItemMeta imBlock = itemBlock.getItemMeta();
         imBlock.setDisplayName(Utils.addColors("<3"));
         itemBlock.setItemMeta(imBlock);

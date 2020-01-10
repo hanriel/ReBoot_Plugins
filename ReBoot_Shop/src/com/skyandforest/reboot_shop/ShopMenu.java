@@ -57,7 +57,7 @@ public class ShopMenu implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST)
     void onInventoryClick(InventoryClickEvent event) {
-        if (event.getInventory().getTitle().equals(name)) {
+        if (event.getView().getTitle().equals(name)) {
             event.setCancelled(true);
             if (event.getClick() != ClickType.LEFT)
                 return;

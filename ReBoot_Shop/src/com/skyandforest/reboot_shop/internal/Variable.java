@@ -10,13 +10,7 @@ public enum Variable {
 			return executor.getName();
 		}
 	},
-	
-	ONLINE("{online}") {
-		public String getReplacement(Player executor) {
-			return String.valueOf(CachedGetters.getOnlinePlayers());
-		}
-	},
-	
+
 	MAX_PLAYERS("{max_players}") {
 		public String getReplacement(Player executor) {
 			return String.valueOf(Bukkit.getMaxPlayers());

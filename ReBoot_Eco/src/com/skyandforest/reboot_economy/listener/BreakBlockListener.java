@@ -1,5 +1,6 @@
 package com.skyandforest.reboot_economy.listener;
 
+import com.skyandforest.reboot_core.Core;
 import com.skyandforest.reboot_economy.Eco;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -22,13 +23,13 @@ public class BreakBlockListener implements Listener {
             case IRON_ORE:
                 Eco.addBalance(player, 25, true);
                 break;
-            case QUARTZ_ORE:
+            case NETHER_QUARTZ_ORE:
                 Eco.addBalance(player, 25, true);
                 break;
             case LAPIS_ORE:
                 Eco.addBalance(player, 50, true);
                 break;
-            case GLOWING_REDSTONE_ORE:
+            case REDSTONE_ORE:
                 Eco.addBalance(player, 50, true);
                 break;
             case GOLD_ORE:

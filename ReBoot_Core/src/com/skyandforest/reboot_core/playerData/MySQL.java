@@ -12,7 +12,7 @@ public class MySQL {
 
     private boolean connect(){
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://212.33.246.122/reboot?user=CMen&password=Aazz0909&autoReconnect=true");
+            connection = DriverManager.getConnection("jdbc:mysql://212.33.246.122/reboot?user=irondrag&password=admin2014&autoReconnect=true");
             return connection.isValid(30);
         } catch (SQLException e) {
             runException(e);

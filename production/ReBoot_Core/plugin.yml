@@ -1,0 +1,9 @@
+name: RBCore
+main: com.skyandforest.reboot_core.Core
+version: "18.32.7.8"
+load: POSTWORLD
+commands:
+  core:
+    description: ReBoot core info.
+    usage: /<command> [help [admin],reload]
+    aliases: [сщку]

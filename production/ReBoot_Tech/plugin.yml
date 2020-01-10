@@ -1,0 +1,10 @@
+name: RBTech
+main: com.skyandforest.reboot_tech.Tech
+version: "19.32.0.1"
+load: POSTWORLD
+api-version: 1.13
+commands:
+  tech:
+    description: ReBoot tech info.
+    usage: /<command> [help [admin],reload]
+    aliases: [еуср]
