@@ -11,7 +11,6 @@ import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.io.File;
 import java.io.IOException;
 
 public class Core extends JavaPlugin {
@@ -39,9 +38,7 @@ public class Core extends JavaPlugin {
     }
 
     @Override
-    public void onDisable() {
-
-    }
+    public void onDisable() {}
 
     public void load() {
 

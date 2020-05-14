@@ -38,11 +38,12 @@ public class PayCommandHandler extends CommandFramework {
 
         CommandValidate.notNull(target, Utils.addColors(Eco.CHAT_PREFIX + "&сЭтот игрок не в сети!"));
 
-        long amount = Eco.asCopper(args[2], (long) CommandValidate.getPositiveDouble(args[1]));
+        long amount = Eco.toCopper(args[2], (long) CommandValidate.getPositiveDouble(args[1]));
         CommandValidate.isTrue(!eco.hasBalance(target, args[2], amount), Eco.CHAT_PREFIX + ChatColor.RED + "У вас недостаточно средств для перевода!");
 
-        Eco.addBalance(target, amount, false);
-        Eco.addBalance((Player) sender, -amount, false);
+        Eco.addBalance(target, amount);
+        Eco.addBalance((Player) sender, -amount);
+
         target.sendMessage(Utils.addColors(Eco.CHAT_PREFIX + ((Player) sender).getDisplayName() + "&a отправил вам: &e" + amount + " &aмеди."));
         sender.sendMessage(Eco.CHAT_PREFIX + "Перевод успешно отправлен.");
     }

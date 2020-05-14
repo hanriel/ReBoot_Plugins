@@ -17,28 +17,28 @@ public class BreakBlockListener implements Listener {
         Material roto = block.getType();
         switch (roto){
             case COAL_ORE:
-                Eco.addBalance(player, 10, true);
+                Eco.addBalance(player, 10);
                 break;
             case IRON_ORE:
-                Eco.addBalance(player, 25, true);
+                Eco.addBalance(player, 25);
                 break;
             case NETHER_QUARTZ_ORE:
-                Eco.addBalance(player, 25, true);
+                Eco.addBalance(player, 25);
                 break;
             case LAPIS_ORE:
-                Eco.addBalance(player, 50, true);
+                Eco.addBalance(player, 50);
                 break;
             case REDSTONE_ORE:
-                Eco.addBalance(player, 50, true);
+                Eco.addBalance(player, 50);
                 break;
             case GOLD_ORE:
-                Eco.addBalance(player, 100, true);
+                Eco.addBalance(player, 100);
                 break;
             case DIAMOND_ORE:
-                Eco.addBalance(player, 200, true);
+                Eco.addBalance(player, 200);
                 break;
             case EMERALD_ORE:
-                Eco.addBalance(player, 250, true);
+                Eco.addBalance(player, 250);
                 break;
         }
     }

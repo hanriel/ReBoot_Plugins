@@ -60,7 +60,7 @@ public class EconomyBridge {
 		if (!hasValidEconomy()) throw new IllegalStateException("Economy plugin was not found!");
 		if (amount < 0) throw new IllegalArgumentException("Invalid amount of money: " + amount);
 
-		economy.addBalance(player, -amount, false);
+		economy.addBalance(player, -amount);
 	}
 
 	public static void giveMoney(Player player, long amount) {
@@ -76,7 +76,7 @@ public class EconomyBridge {
 			public void run() {
 				for (Map.Entry<Player, Long> entry : transList.entrySet()) {
 					if (entry.getKey().isOnline()) {
-						economy.addBalance(entry.getKey(), entry.getValue(), true);
+						economy.addBalance(entry.getKey(), entry.getValue());
 						transList.remove(entry.getKey());
 						break;
 					}

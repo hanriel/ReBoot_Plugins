@@ -77,19 +77,19 @@ public class CommandHandler extends CommandFramework implements Listener {
             List<String> lore = new ArrayList<>();
             lore.add(Utils.addColors("&aСтоимость:"));
 
-            long[] cost = new long[3];
+            long cost = 0;
 
             switch (args.length) {
                 case 4:
-                    cost[2] = Long.parseLong(args[3]);
+                    cost += Eco.toCopper("s", Long.parseLong(args[3]));
                 case 3:
-                    cost[1] = Long.parseLong(args[2]);
+                    cost += Eco.toCopper("s", Long.parseLong(args[2]));
                     break;
             }
 
-            cost[0] = Long.parseLong(args[1]);
+            cost += Long.parseLong(args[1]);
 
-            cost = Eco.normBalance(cost).clone();
+            //cost = Eco.normBalance(cost).clone();
 
             lore.add(Utils.addColors(Eco.formatBalance(cost)));
             lore.add(Utils.addColors("&aПродавец: &c" + ((Player) sender).getDisplayName()));
@@ -210,8 +210,8 @@ public class CommandHandler extends CommandFramework implements Listener {
                 costArray[1] = Long.parseLong(cost[2].substring(2));
                 costArray[2] = Long.parseLong(cost[4].substring(2));
 
-                costArray[1] = Eco.asCopper("s", costArray[1]);
-                costArray[2] = Eco.asCopper("g", costArray[2]);
+                costArray[1] = Eco.toCopper("s", costArray[1]);
+                costArray[2] = Eco.toCopper("g", costArray[2]);
 
                 long price = costArray[0] + costArray[1] + costArray[2];
                 doPayment(event.getPlayer(), price, item, target);
