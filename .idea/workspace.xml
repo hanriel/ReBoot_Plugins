@@ -2,90 +2,158 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="ReBoot_Tech:jar" />
+      <artifact name="ReBoot_Core:jar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6826b572-8839-46b8-8a6f-ee669dbe8379" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/MedievalGUI_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/MedievalNPC_jar.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/Session.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/playerData/SQLQuerys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReBoot_Eco/src/com/hanriel/reboot_economy/config/YAML/SpecialConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReBoot_Shop/src/com/hanriel/reboot_shop/config/yaml/PluginConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/ReBoot_Auth_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ReBoot_Auth_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/ReBoot_Core_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ReBoot_Core_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/ReBoot_Dungeons_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ReBoot_Dungeons_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/ReBoot_Eco_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ReBoot_Eco_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ReBoot_GUI_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ReBoot_GUI_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ReBoot_NPC_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ReBoot_NPC_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/ReBoot_Shop_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ReBoot_Shop_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Vault.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/exp4j_0_4_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalCore/ReBoot_Core.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalCore/src/com/saf/reboot_core/Catcher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalCore/src/com/saf/reboot_core/CommandFramework.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalCore/src/com/saf/reboot_core/Configs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalCore/src/com/saf/reboot_core/Core.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalCore/src/com/saf/reboot_core/ErrorLogger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalCore/src/com/saf/reboot_core/ErrorLoggerTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalCore/src/com/saf/reboot_core/Log.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalCore/src/com/saf/reboot_core/_CommandExecutor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalCore/src/com/saf/reboot_core/_Listener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalCore/src/com/saf/reboot_core/util/StringUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalCore/src/com/saf/reboot_core/util/Utils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalCore/src/plugin.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalGUI/ReBoot_GUI.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalGUI/src/com/saf/medievalgui/GUI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalGUI/src/com/saf/medievalgui/_Listener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalGUI/src/plugin.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalNPC/ReBoot_NPC.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalNPC/src/com/saf/medievalnpc/DefNPC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalNPC/src/com/saf/medievalnpc/Holograms.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalNPC/src/com/saf/medievalnpc/NPC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalNPC/src/com/saf/medievalnpc/PacketReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalNPC/src/com/saf/medievalnpc/Place.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalNPC/src/com/saf/medievalnpc/_CommandExecutor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalNPC/src/com/saf/medievalnpc/_Listener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MedievalNPC/src/plugin.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ReBoot_Auth/ReBoot_Auth.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/ReBoot_Auth.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/Auth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/Permissions.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/Permissions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/SerializableItemStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/SerializableItemStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/Session.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/api/ChestCommandsAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/api/ChestCommandsAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/api/ClickHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/api/ClickHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/api/Icon.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/api/Icon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/api/IconMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/api/IconMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/bridge/EconomyBridge.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/bridge/EconomyBridge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/bridge/bungee/BungeeCordUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/bridge/bungee/BungeeCordUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/command/CommandFramework.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/command/CommandFramework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/command/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/command/CommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/config/AsciiPlaceholders.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/config/AsciiPlaceholders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/config/Lang.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/config/Lang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/config/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/config/Settings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/config/yaml/PluginConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/config/YAML/PluginConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/config/yaml/SpecialConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/config/yaml/SpecialConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/exception/FormatException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Shop/src/com/hanriel/reboot_shop/exception/FormatException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/internal/BoundItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/internal/BoundItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/internal/CachedGetters.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Shop/src/com/hanriel/reboot_shop/internal/CachedGetters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/internal/CommandsClickHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/internal/CommandsClickHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/internal/ExtendedIconMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/internal/ExtendedIconMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/internal/MenuData.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/internal/MenuData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/internal/MenuInventoryHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/internal/MenuInventoryHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/internal/RequiredItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/internal/RequiredItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/internal/Variable.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/internal/Variable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/internal/icon/ExtendedIcon.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/internal/icon/ExtendedIcon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/internal/icon/IconCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/internal/icon/IconCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/internal/icon/command/BroadcastIconCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/internal/icon/command/BroadcastIconCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/internal/icon/command/ConsoleIconCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/internal/icon/command/ConsoleIconCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/internal/icon/command/GiveIconCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/internal/icon/command/GiveIconCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/internal/icon/command/GiveMoneyIconCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/internal/icon/command/GiveMoneyIconCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/internal/icon/command/OpIconCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/internal/icon/command/OpIconCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/internal/icon/command/OpenIconCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/internal/icon/command/OpenIconCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/internal/icon/command/PlayerIconCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/internal/icon/command/PlayerIconCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/internal/icon/command/ServerIconCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/internal/icon/command/ServerIconCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/internal/icon/command/SoundIconCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/internal/icon/command/SoundIconCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/internal/icon/command/TellIconCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/internal/icon/command/TellIconCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/listener/JoinListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/listener/JoinListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/nms/AttributeRemover.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/nms/AttributeRemover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/task/ErrorLoggerTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/task/ErrorLoggerTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/util/CaseInsensitiveMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/util/CaseInsensitiveMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/util/ClickType.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/util/ClickType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/util/ErrorLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Shop/src/com/hanriel/reboot_shop/ErrorLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/util/InventoryUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/util/InventoryUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/util/ItemStackReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/util/ItemStackReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/util/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/util/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/util/Validate.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/util/Validate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/skyandforest/reboot_auth/util/VersionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/util/VersionUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/src/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Core/ReBoot_Core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/ReBoot_Core.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/Core.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/Permissions.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/Permissions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/_Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/_Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/command/CommandFramework.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/command/CommandFramework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/command/CoreCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/command/CoreCommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/config/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/config/Settings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/exception/FormatException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/exception/FormatException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/playerData/MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/playerData/MySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/playerData/PlayerDataFramework.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/playerData/PlayerDataFramework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/playerData/SQLQuerys.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/util/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/util/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Core/src/com/skyandforest/reboot_core/util/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/util/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Core/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/src/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReBoot_Dungeons/ReBoot_Dungeons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Dungeons/ReBoot_Dungeons.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReBoot_Dungeons/src/com/skyandforest/reboot_dungeons/Utils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReBoot_Dungeons/src/com/skyandforest/reboot_dungeons/_Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Dungeons/src/com/skyandforest/reboot_dungeons/_Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Dungeons/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Dungeons/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Dungeons/src/com/skyandforest/reboot_dungeons/BlockSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Dungeons/src/com/hanriel/reboot_dungeons/BlockSave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Dungeons/src/com/skyandforest/reboot_dungeons/Dungeons.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Dungeons/src/com/hanriel/reboot_dungeons/Dungeons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Dungeons/src/com/skyandforest/reboot_dungeons/_Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Dungeons/src/com/hanriel/reboot_dungeons/_Listener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReBoot_Eco/ReBoot_Eco.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Eco/ReBoot_Eco.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/Eco.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/Eco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/command/EcoCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/command/EcoCommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/command/PayCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/command/PayCommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/config/YAML/SpecialConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_eco/config/YAML/SpecialConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/Eco.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Eco/src/com/hanriel/reboot_economy/Eco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/Permissions.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Eco/src/com/hanriel/reboot_economy/Permissions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/command/EcoCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Eco/src/com/hanriel/reboot_economy/command/EcoCommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/command/PayCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Eco/src/com/hanriel/reboot_economy/command/PayCommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/config/Lang.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Shop/src/com/hanriel/reboot_shop/config/Lang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/config/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Shop/src/com/hanriel/reboot_shop/config/Settings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/config/YAML/PluginConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Eco/src/com/hanriel/reboot_economy/config/YAML/PluginConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/config/YAML/SpecialConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/config/YAML/SpecialConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/internal/Variable.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Eco/src/com/hanriel/reboot_economy/internal/Variable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/com/skyandforest/reboot_economy/listener/BreakBlockListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Eco/src/com/hanriel/reboot_economy/listener/BreakBlockListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Eco/src/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_GUI/ReBoot_GUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_GUI/ReBoot_GUI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_GUI/src/com/skyandforest/reboot_gui/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_GUI/src/com/hanriel/reboot_gui/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_GUI/src/com/skyandforest/reboot_gui/_Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_GUI/src/com/hanriel/reboot_gui/_Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_GUI/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_GUI/src/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_NPC/ReBoot_NPC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_NPC/ReBoot_NPC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_NPC/src/com/skyandforest/reboot_npc/DefNPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/DefNPC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_NPC/src/com/skyandforest/reboot_npc/Holograms.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/Holograms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_NPC/src/com/skyandforest/reboot_npc/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/NPC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_NPC/src/com/skyandforest/reboot_npc/PacketReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/PacketReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_NPC/src/com/skyandforest/reboot_npc/Place.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/Place.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_NPC/src/com/skyandforest/reboot_npc/_CommandExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/_CommandExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_NPC/src/com/skyandforest/reboot_npc/_Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/_Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_NPC/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_NPC/src/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReBoot_Shop/ReBoot_Shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Shop/ReBoot_Shop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Shop/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Shop/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/EconomyBridge.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Shop/src/com/hanriel/reboot_shop/EconomyBridge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/ErrorLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/util/ErrorLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/Permissions.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Shop/src/com/hanriel/reboot_shop/Permissions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/SerializableItemStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Shop/src/com/hanriel/reboot_shop/SerializableItemStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Shop/src/com/hanriel/reboot_shop/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/ShopMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Shop/src/com/hanriel/reboot_shop/ShopMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/VersionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Shop/src/com/hanriel/reboot_shop/VersionUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/command/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Shop/src/com/hanriel/reboot_shop/command/CommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/config/AsciiPlaceholders.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Shop/src/com/hanriel/reboot_shop/config/AsciiPlaceholders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/config/Lang.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Eco/src/com/hanriel/reboot_economy/config/Lang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/config/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Eco/src/com/hanriel/reboot_economy/config/Settings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/config/yaml/PluginConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/config/yaml/PluginConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/config/yaml/SpecialConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Shop/src/com/hanriel/reboot_shop/config/yaml/SpecialConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/exception/FormatException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/exception/FormatException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/internal/CachedGetters.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/src/java/com/hanriel/reboot_auth/internal/CachedGetters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/internal/Variable.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Shop/src/com/hanriel/reboot_shop/internal/Variable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Shop/src/com/skyandforest/reboot_shop/task/ErrorLoggerTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Shop/src/com/hanriel/reboot_shop/task/ErrorLoggerTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Tech/ReBoot_Tech.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Tech/ReBoot_Tech.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Tech/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Tech/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Tech/src/com/skyandforest/reboot_tech/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Tech/src/com/hanriel/reboot_tech/Machine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Tech/src/com/skyandforest/reboot_tech/Permissions.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Tech/src/com/hanriel/reboot_tech/Permissions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Tech/src/com/skyandforest/reboot_tech/Tech.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Tech/src/com/hanriel/reboot_tech/Tech.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Tech/src/com/skyandforest/reboot_tech/command/TechCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Tech/src/com/hanriel/reboot_tech/command/TechCommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Tech/src/com/skyandforest/reboot_tech/listener/PlaceBlockListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Tech/src/com/hanriel/reboot_tech/listener/PlaceBlockListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Tech/src/com/skyandforest/reboot_tech/machines/Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Tech/src/com/hanriel/reboot_tech/machines/Query.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Tech/src/com/skyandforest/reboot_tech/machines/QueryGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Tech/src/com/hanriel/reboot_tech/machines/QueryGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Tech/src/com/skyandforest/reboot_tech/util/Holograms.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Tech/src/com/hanriel/reboot_tech/util/Holograms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/ReBoot_Core/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/production/ReBoot_Core/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/ReBoot_Eco/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/production/ReBoot_Eco/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/ReBoot_Shop/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/production/ReBoot_Shop/plugin.yml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="ReBoot_Plugins" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -104,65 +172,57 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="814" />
-    <option name="height" value="867" />
-  </component>
   <component name="ProjectId" id="1PgNlKC8eA9pyfsJrrYudlDFUec" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/Projects/Code/Java/ReBoot_Plugins/ReBoot_Eco/src/com/skyandforest/reboot_economy/command/EcoCommandHandler.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ReBoot_Tech/src/com/skyandforest/reboot_tech/util" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/config" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.skyandforest.reboot_tech.command" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\HOME\CODE\JAVA\ReBoot_Plugins\ReBoot_Core\src\com\hanriel\reboot_core\config" />
+      <recent name="C:\DATA\CODE\Java\Plugins\ReBoot_Plugins\ReBoot_Tech\src\com\skyandforest\reboot_tech\util" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.skyandforest.reboot_tech" />
       <recent name="com.skyandforest.reboot_core.exception" />
       <recent name="com.skyandforest.reboot_economy.config" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\DATA\CODE\Java\Plugins\ReBoot_Plugins\ReBoot_Tech\src\com\skyandforest\reboot_tech\util" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.skyandforest.reboot_tech.command" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="StartSrv" type="JarApplication">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/../../../../SERVERS/PT/spigot.jar" />
+      <option name="JAR_PATH" value="T:/SERVERS/PT/spigot-1.14.4.jar" />
       <option name="VM_PARAMETERS" value="-Xmx1024M -Dfile.encoding=CP866" />
       <option name="PROGRAM_PARAMETERS" value="nogui" />
-      <option name="WORKING_DIRECTORY" value="C:\DATA\SERVERS\PT" />
+      <option name="WORKING_DIRECTORY" value="T:\SERVERS\PT" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <method v="2">
@@ -211,6 +271,11 @@
       <workItem from="1561700208174" duration="1213000" />
       <workItem from="1566291939767" duration="650000" />
       <workItem from="1569674589740" duration="442000" />
+      <workItem from="1589212377665" duration="2562000" />
+      <workItem from="1589215329388" duration="4123000" />
+      <workItem from="1589300566418" duration="4088000" />
+      <workItem from="1589382047175" duration="5088000" />
+      <workItem from="1589469248190" duration="5639000" />
     </task>
     <servers />
   </component>
@@ -231,6 +296,44 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
   </component>
+  <component name="WindowStateProjectService">
+    <state x="-1219" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589475126216">
+      <screen x="-1600" y="0" width="1600" height="870" />
+    </state>
+    <state x="-1219" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589475126216" />
+    <state x="666" y="266" key="FileChooserDialogImpl" timestamp="1589213531662">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="666" y="266" key="FileChooserDialogImpl/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589213531662" />
+    <state width="1877" height="146" key="GridCell.Tab.0.bottom" timestamp="1589475132094">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589475132094" />
+    <state width="1877" height="146" key="GridCell.Tab.0.center" timestamp="1589475132093">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.0.center/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589475132093" />
+    <state width="1877" height="146" key="GridCell.Tab.0.left" timestamp="1589475132092">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.0.left/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589475132092" />
+    <state width="1877" height="146" key="GridCell.Tab.0.right" timestamp="1589475132093">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.0.right/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589475132093" />
+    <state x="230" y="112" key="SettingsEditor" timestamp="1589387156953">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="230" y="112" key="SettingsEditor/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589387156953" />
+    <state x="454" y="429" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1589213605301">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="454" y="429" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589213605301" />
+    <state x="616" y="243" key="run.anything.popup" timestamp="1589216586724">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589216586724" />
+  </component>
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="JarApplication">
@@ -241,82 +344,5 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>ReBoot_Tech:jar</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>ReBoot_Core</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>craftbukkit-1.14.2-R0.1-SNAPSHOT</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

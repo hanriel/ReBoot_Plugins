@@ -1,5 +1,5 @@
 name: RBShop
-main: com.skyandforest.reboot_shop.Shop
+main: com.hanriel.reboot_shop.Shop
 version: "18.26.3.26"
 load: POSTWORLD
 api-version: 1.13

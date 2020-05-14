@@ -1,11 +1,10 @@
 name: RBEconomy
-main: com.skyandforest.reboot_economy.Eco
+main: com.hanriel.reboot_economy.Eco
 version: "18.32.7.3"
 load: STARTUP
-api-version: 1.13
 commands:
   eco:
-    description: Working with player balance
+    description: Работа с балансом пользователя
     usage: /<command> [add|set <currensy> <amount>]
     aliases: [b, bal, balance, money, и, ифд, ифдфтсу, ьщтун]
   pay:

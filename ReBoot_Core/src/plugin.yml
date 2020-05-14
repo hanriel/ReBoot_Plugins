@@ -1,6 +1,6 @@
 name: RBCore
-main: com.skyandforest.reboot_core.Core
-version: "18.32.7.8"
+main: com.hanriel.reboot_core.Core
+version: "20.20.4.5"
 load: POSTWORLD
 commands:
   core:

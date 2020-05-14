@@ -1,0 +1,11 @@
+name: RBGUI
+main: com.skyandforest.reboot_gui.GUI
+version: "18.21.1.2"
+load: STARTUP
+commands:
+  quest:
+    description: Open book
+    usage: /<command>
+  health:
+    description: HealPlayer
+    usage: /<command>

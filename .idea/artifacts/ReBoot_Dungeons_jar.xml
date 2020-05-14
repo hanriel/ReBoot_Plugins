@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="ReBoot_Dungeons:jar">
-    <output-path>$PROJECT_DIR$/../../../../SERVERS/PT/plugins</output-path>
+    <output-path>T:/SERVERS/PT/plugins</output-path>
     <root id="archive" name="ReBoot_Dungeons.jar">
       <element id="module-output" name="ReBoot_Dungeons" />
     </root>
