@@ -22,23 +22,28 @@ public class Core extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        if (instance != null) {
-            getLogger().warning("Please do not use /reload or plugin reloaders. Do \"/rb reload\" instead.");
-            return;
-        }
-
+        if (instance != null) return;
         instance = this;
+
         conf = new Settings(new PluginConfig(this, "config.yml"));
 
         CommandFramework.register(this, new CoreCommandHandler("core"));
 
         Core.getInstance().getServer().getPluginManager().registerEvents(new _Listener(), instance);
-
         load();
+        for(Player player : Bukkit.getOnlinePlayers()) {
+            PlayerDataFramework.loadData(player);
+        }
     }
 
     @Override
-    public void onDisable() {}
+    public void onDisable() {
+        for(Player player : Bukkit.getOnlinePlayers()){
+            if (!player.hasMetadata("c"))
+                continue;
+            PlayerDataFramework.uploadData(player);
+        }
+    }
 
     public void load() {
 

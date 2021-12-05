@@ -1,0 +1,8 @@
+name: TOO-TitleManager
+version: '${project.version}'
+main: com.hanriel.tootitlemanager.TitleManager
+api-version: 1.17
+prefix: TitleManager
+authors: [ Hanriel ]
+website: obsidianorder.ru
+depend: [PlaceholderAPI]

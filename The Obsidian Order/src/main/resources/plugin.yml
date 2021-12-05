@@ -1,0 +1,29 @@
+name: TheObsidianOrder
+version: ${project.version}
+main: com.hanriel.theobsidianorder.TheObsidianOrder
+api-version: 1.16
+prefix: TOO
+authors: [ Hanriel ]
+website: www.obsidianorder.ru
+commands:
+  core:
+    description: The Obsidian Order core plugin information.
+    usage: /<command> [help, reload]
+  eco:
+    description: Работа с балансом пользователя
+    usage: /<command> [add|set <amount>]
+    aliases: [ b, bal, balance, money, и, ифд, ифдфтсу, ьщтун ]
+  pay:
+    description: Совершить перевод денег другому игроку
+    usage: /<command> <игрок> <количество>
+    aliases: [ зфн ]
+  shop:
+    description: Main command for shop system.
+    usage: /<command>
+    aliases: [ sh, s ]
+  npc:
+    description: Создание NPC
+    usage: /<command> [name]
+  link:
+    description: Привязка игрового аккаунта к сайту
+    usage: /<command> [name]

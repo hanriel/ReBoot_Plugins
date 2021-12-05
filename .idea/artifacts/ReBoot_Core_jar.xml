@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="ReBoot_Core:jar">
-    <output-path>T:/SERVERS/PT/plugins</output-path>
+    <output-path>/Volumes/srv/too-test/plugins</output-path>
     <root id="archive" name="ReBoot_Core.jar">
       <element id="module-output" name="ReBoot_Core" />
     </root>

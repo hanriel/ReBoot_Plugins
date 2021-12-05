@@ -1,9 +1,8 @@
 name: RBCore
 main: com.hanriel.reboot_core.Core
-version: "20.20.4.5"
+version: "21.27.6.1"
 load: POSTWORLD
 commands:
   core:
     description: ReBoot core info.
     usage: /<command> [help [admin],reload]
-    aliases: [сщку]

@@ -1,6 +1,6 @@
 name: RBEconomy
 main: com.hanriel.reboot_economy.Eco
-version: "20.20.4.12"
+version: "21.26.2.0"
 load: STARTUP
 commands:
   eco:

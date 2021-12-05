@@ -1,5 +1,5 @@
 name: RBTech
-main: com.skyandforest.reboot_tech.Tech
+main: com.hanriel.reboot_tech.Tech
 version: "19.32.0.1"
 load: POSTWORLD
 api-version: 1.13

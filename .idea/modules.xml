@@ -10,6 +10,9 @@
       <module fileurl="file://$PROJECT_DIR$/ReBoot_NPC/ReBoot_NPC.iml" filepath="$PROJECT_DIR$/ReBoot_NPC/ReBoot_NPC.iml" />
       <module fileurl="file://$PROJECT_DIR$/ReBoot_Shop/ReBoot_Shop.iml" filepath="$PROJECT_DIR$/ReBoot_Shop/ReBoot_Shop.iml" />
       <module fileurl="file://$PROJECT_DIR$/ReBoot_Tech/ReBoot_Tech.iml" filepath="$PROJECT_DIR$/ReBoot_Tech/ReBoot_Tech.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TOO-Hub/TOO-Hub.iml" filepath="$PROJECT_DIR$/TOO-Hub/TOO-Hub.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TOO-TitleManager/TOO-TitleManager.iml" filepath="$PROJECT_DIR$/TOO-TitleManager/TOO-TitleManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/The Obsidian Order/The Obsidian Order.iml" filepath="$PROJECT_DIR$/The Obsidian Order/The Obsidian Order.iml" />
     </modules>
   </component>
 </project>

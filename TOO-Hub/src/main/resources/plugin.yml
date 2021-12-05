@@ -1,0 +1,9 @@
+name: TOO-Hub
+version: ${project.version}
+main: com.hanriel.toohub.Main
+api-version: 1.16
+prefix: TOO
+load: STARTUP
+authors: [ Hanriel ]
+website: obsidianorder.ru
+softdepend: [PlaceholderAPI]

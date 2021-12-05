@@ -1,5 +1,5 @@
 name: RBGUI
-main: com.skyandforest.reboot_gui.GUI
+main: com.hanriel.reboot_gui.GUI
 version: "18.21.1.2"
 load: STARTUP
 commands:

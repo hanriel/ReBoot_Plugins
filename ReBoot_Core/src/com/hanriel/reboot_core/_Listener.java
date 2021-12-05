@@ -14,6 +14,7 @@ public class _Listener implements Listener {
     public void onPlayerJoinEvent(PlayerJoinEvent e) {
         Player player = e.getPlayer();
         e.setJoinMessage(Utils.addColors("&a" + player.getName() + " &rприсоединился к игре"));
+        player.sendTitle(Utils.addColors("&6&lThe &5&lObsidian &6&lOrder"), Utils.addColors("&aванильный Minecraft сервер"), 20, 80, 20);
         PlayerDataFramework.loadData(player);
     }
 

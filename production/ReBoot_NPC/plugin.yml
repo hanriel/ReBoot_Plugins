@@ -1,8 +1,9 @@
 name: RBNPC
 main: com.hanriel.reboot_npc.NPC
-version: 18.21.3.1
-load: STARTUP
+version: "21.27.6.1"
+load: POSTWORLD
+api-version: 1.16
 commands:
-  place:
-    description: Телепорт
+  npc:
+    description: Создание NPC
     usage: /<command>

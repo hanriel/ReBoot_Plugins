@@ -16,7 +16,7 @@ public class MySQL {
         try {
             connection = DriverManager.getConnection(
                     "jdbc:mysql://" + Core.getConf().mysql_host +
-                        "/reboot?user=" + Core.getConf().mysql_user +
+                        "/too?user=" + Core.getConf().mysql_user +
                         "&password=" + Core.getConf().mysql_password +
                         "&autoReconnect=true"
             );

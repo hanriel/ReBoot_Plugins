@@ -138,6 +138,30 @@ public abstract class CommandFramework implements CommandExecutor {
             }
         }
 
+        public static long getPositiveLong(String input) {
+            try {
+                long l = Long.parseLong(input);
+                if (l < 0) {
+                    throw new CommandException("Число должно быть положительным или равно нулю.");
+                }
+                return l;
+            } catch (NumberFormatException e) {
+                throw new CommandException("Повреждённое число \"" + input + "\".");
+            }
+        }
+
+        public static long getPositiveLongNotZero(String input) {
+            try {
+                long l = Integer.parseInt(input);
+                if (l <= 0) {
+                    throw new CommandException("Число должно быть положительным.");
+                }
+                return l;
+            } catch (NumberFormatException e) {
+                throw new CommandException("Повреждённое число \"" + input + "\".");
+            }
+        }
+
         public static void minLength(Object[] array, int minLength, String msg) {
             if (array.length < minLength) {
                 throw new CommandException(msg);

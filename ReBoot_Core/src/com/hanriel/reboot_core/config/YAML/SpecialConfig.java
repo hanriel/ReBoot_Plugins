@@ -2,6 +2,7 @@ package com.hanriel.reboot_core.config.YAML;
 
 import com.hanriel.reboot_core.util.Utils;
 import org.bukkit.configuration.InvalidConfigurationException;
+import org.bukkit.configuration.file.FileConfiguration;
 
 import java.io.IOException;
 import java.lang.reflect.Field;
@@ -23,8 +24,6 @@ public class SpecialConfig {
     }
 
     public void load() throws IOException, InvalidConfigurationException, IllegalAccessException {
-
-
 
         // Если конфиг уже инициализирован
         if (defaultValuesMap == null) {
@@ -98,6 +97,17 @@ public class SpecialConfig {
         }
     }
 
+    public FileConfiguration getConfig() {
+        return this.config;
+    }
+
+    public void saveConfig() {
+        try {
+            this.config.save();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     private boolean isValidField(Field field) {
         int modifiers = field.getModifiers();

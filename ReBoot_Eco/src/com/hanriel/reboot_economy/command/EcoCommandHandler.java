@@ -28,17 +28,7 @@ public class EcoCommandHandler extends CommandFramework {
                     Utils.addColors(Eco.CHAT_PREFIX + "&cОператор, ты бомж, у тебя нет денег!")
             );
 
-            long[] balance = Eco.normBalance(Eco.getBalance((Player)sender));
-            String[] message = new String[5];
-
-            message[0] = Utils.addColors("&7=== &eТвой баланс&7 ===");
-//            message[1] = Utils.addColors("     &bБриллиантов: " + ((Player)sender).getMetadata("d").get(0).asInt());
-            message[1] = Utils.addColors("    &eЗолотых: " + balance[2]);
-            message[2] = Utils.addColors("    &7Серебрянных: " + balance[1]);
-            message[3] = Utils.addColors("    &6Медных: " + balance[0]);
-            message[4] = Utils.addColors("&7==================");
-
-            sender.sendMessage(message);
+            sender.sendMessage(Utils.addColors(Eco.CHAT_PREFIX + "&eТвой баланс: &7" + Eco.getBalance((Player)sender) + " Люф"));
             return;
         }
 
@@ -80,15 +70,15 @@ public class EcoCommandHandler extends CommandFramework {
                     Utils.addColors(Eco.CHAT_PREFIX + "&cУ вас недостаточно прав для выполнения данной команды.")
             );
 
-            CommandValidate.minLength(args, 4, "Usage: /" + label + " add <player> <amount> <currency>");
+            CommandValidate.minLength(args, 3, "Usage: /" + label + " add <игрок> <количество>");
 
             Player target = Bukkit.getPlayerExact(args[1]);
             CommandValidate.notNull(target, Utils.addColors(Eco.CHAT_PREFIX + "&сЭтот игрок не в сети!"));
 
-            long amount = Eco.toCopper(args[3],(long) CommandValidate.getPositiveDouble(args[2]));
+            long amount = CommandValidate.getPositiveLong(args[2]);
 
             Eco.addBalance(target, amount);
-            sender.sendMessage(Utils.addColors(Eco.CHAT_PREFIX + "Счёт игрока успешно пополнен на: &e"+amount+" &aмеди."));
+            sender.sendMessage(Utils.addColors(Eco.CHAT_PREFIX + "Счёт игрока успешно пополнен на: &e"+amount+" &aЛюфов."));
             return;
         }
 
@@ -103,11 +93,11 @@ public class EcoCommandHandler extends CommandFramework {
             Player target = Bukkit.getPlayerExact(args[1]);
             CommandValidate.notNull(target, Utils.addColors(Eco.CHAT_PREFIX + "&сЭтот игрок не в сети!"));
 
-            long amount = Eco.toCopper(args[3],(long) CommandValidate.getPositiveDouble(args[2]));
+            long amount = CommandValidate.getPositiveLong(args[2]);
 
             Eco.setBalance(target, amount);
-            sender.sendMessage(Utils.addColors(Eco.CHAT_PREFIX + "Счёт игрока успешно становлен в: &e"+amount+" &aмеди."));
-            target.sendMessage(Utils.addColors(Eco.CHAT_PREFIX + ("&aВаш счёт установлен в: &e" + amount + " &aмеди.")));
+            sender.sendMessage(Utils.addColors(Eco.CHAT_PREFIX + "Счёт игрока успешно становлен в: &e"+amount+" &aЛюф."));
+            target.sendMessage(Utils.addColors(Eco.CHAT_PREFIX + ("&aВаш счёт установлен в: &e" + amount + " &aЛюф.")));
             return;
         }
 

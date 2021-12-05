@@ -1,10 +1,10 @@
 package com.hanriel.reboot_npc;
 
-import net.minecraft.server.v1_14_R1.*;
+import net.minecraft.server.v1_16_R3.*;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
-import org.bukkit.craftbukkit.v1_14_R1.CraftWorld;
-import org.bukkit.craftbukkit.v1_14_R1.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_16_R3.CraftWorld;
+import org.bukkit.craftbukkit.v1_16_R3.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
@@ -27,7 +27,7 @@ public class Holograms {
 
     public void showPlayerTemp(final Player p,int Time){
         showPlayer(p);
-        Bukkit.getScheduler().runTaskLater(NPC.plugin, new Runnable() {
+        Bukkit.getScheduler().runTaskLater(NPC.getInstance(), new Runnable() {
             public void run() {
                 hidePlayer(p);
             }
@@ -37,7 +37,7 @@ public class Holograms {
 
     public void showAllTemp(final Player p,int Time){
         showAll();
-        Bukkit.getScheduler().runTaskLater(NPC.plugin, new Runnable() {
+        Bukkit.getScheduler().runTaskLater(NPC.getInstance(), new Runnable() {
             public void run() {
                 hideAll();
             }

@@ -2,21 +2,128 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
+      <artifact name="ReBoot_Core:jar" />
       <artifact name="ReBoot_Eco:jar" />
+      <artifact name="ReBoot_NPC:jar" />
+      <artifact name="ReBoot_Shop:jar" />
     </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6826b572-8839-46b8-8a6f-ee669dbe8379" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/EconomyBridge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/Exchanger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/ExchangerMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/RightClickNPC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/config/NpcList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReBoot_NPC/src/data.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TOO-Hub/src/main/java/com/hanriel/toohub/EventListen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TOO-Hub/src/main/java/com/hanriel/toohub/IMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TOO-Hub/src/main/java/com/hanriel/toohub/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TOO-Hub/src/main/java/com/hanriel/toohub/MySQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TOO-Hub/src/main/java/com/hanriel/toohub/TabManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TOO-Hub/src/main/java/com/hanriel/toohub/exception/FormatException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TOO-Hub/src/main/java/com/hanriel/toohub/util/FormatUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TOO-Hub/src/main/java/com/hanriel/toohub/util/Permissions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TOO-Hub/src/main/java/com/hanriel/toohub/util/SQLQuerys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TOO-Hub/src/main/java/com/hanriel/toohub/util/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TOO-Hub/src/main/java/com/hanriel/toohub/util/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TOO-Hub/src/main/resources/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TOO-TitleManager/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TOO-TitleManager/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TOO-TitleManager/src/main/java/com/hanriel/tootitlemanager/TabManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TOO-TitleManager/src/main/java/com/hanriel/tootitlemanager/TitleManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TOO-TitleManager/src/main/resources/plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/Eco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/EventListen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/Exchanger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/GameGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/NPC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/PacketReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/RightClickNPC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/TabManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/TheObsidianOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/command/CommandFramework.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/command/CoreCommandHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/command/EcoCommandHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/command/LinkCommandHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/command/NpcCommandHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/command/PayCommandHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/command/ShopCommandHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/config/Lang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/config/NpcList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/config/Settings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/config/YAML/PluginConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/config/YAML/SpecialConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/exception/FormatException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/internal/CachedGetters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/internal/Variable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/playerData/PlayerDataFramework.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/util/MySQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/util/Permissions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/util/SQLQuerys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/util/SerializableItemStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/util/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/util/Tags.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/util/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/resources/data.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Obsidian Order/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ReBoot_Auth_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ReBoot_Auth_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ReBoot_Core_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ReBoot_Core_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ReBoot_Dungeons_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ReBoot_Dungeons_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ReBoot_Eco_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ReBoot_Eco_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ReBoot_GUI_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ReBoot_GUI_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ReBoot_NPC_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ReBoot_NPC_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ReBoot_Shop_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ReBoot_Shop_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Auth/ReBoot_Auth.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Auth/ReBoot_Auth.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Core/ReBoot_Core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/ReBoot_Core.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/Core.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/_Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/_Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/command/CommandFramework.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/command/CommandFramework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/config/YAML/SpecialConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/config/YAML/SpecialConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/playerData/MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/playerData/MySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/playerData/PlayerDataFramework.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/playerData/PlayerDataFramework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/playerData/SQLQuerys.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/playerData/SQLQuerys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Core/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Core/src/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Dungeons/ReBoot_Dungeons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Dungeons/ReBoot_Dungeons.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Eco/ReBoot_Eco.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Eco/ReBoot_Eco.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/com/hanriel/reboot_economy/Eco.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Eco/src/com/hanriel/reboot_economy/Eco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/com/hanriel/reboot_economy/command/EcoCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Eco/src/com/hanriel/reboot_economy/command/EcoCommandHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/com/hanriel/reboot_economy/command/PayCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Eco/src/com/hanriel/reboot_economy/command/PayCommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/com/hanriel/reboot_economy/listener/BreakBlockListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Eco/src/com/hanriel/reboot_economy/listener/BreakBlockListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/com/hanriel/reboot_economy/internal/Variable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/com/hanriel/reboot_economy/listener/BreakBlockListener.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ReBoot_Eco/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Eco/src/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_GUI/ReBoot_GUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_GUI/ReBoot_GUI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_NPC/ReBoot_NPC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_NPC/ReBoot_NPC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/DefNPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/DefNPC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/Holograms.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/Holograms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/NPC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/PacketReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/PacketReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/Place.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/_CommandExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/_CommandExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/_Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/_Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_NPC/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_NPC/src/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Shop/ReBoot_Shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Shop/ReBoot_Shop.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReBoot_Shop/src/com/hanriel/reboot_shop/EconomyBridge.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Shop/src/com/hanriel/reboot_shop/EconomyBridge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReBoot_Shop/src/com/hanriel/reboot_shop/command/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Shop/src/com/hanriel/reboot_shop/command/CommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReBoot_Tech/ReBoot_Tech.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ReBoot_Tech/ReBoot_Tech.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/ReBoot_Auth/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/production/ReBoot_Auth/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/ReBoot_Core/META-INF/ReBoot_Core.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/ReBoot_Core/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/production/ReBoot_Core/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/ReBoot_Dungeons/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/production/ReBoot_Dungeons/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/ReBoot_Eco/META-INF/ReBoot_Eco.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/production/ReBoot_Eco/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/production/ReBoot_Eco/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/ReBoot_GUI/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/production/ReBoot_GUI/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/ReBoot_NPC/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/production/ReBoot_NPC/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/ReBoot_Shop/META-INF/ReBoot_Shop.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/ReBoot_Tech/META-INF/ReBoot_Tech.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/ReBoot_Tech/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/production/ReBoot_Tech/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +136,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -36,14 +145,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/_Listener.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReBoot_NPC/src/com/hanriel/reboot_npc/Exchanger.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1PgNlKC8eA9pyfsJrrYudlDFUec" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.Annotations" value="false" />
@@ -55,50 +179,258 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/config" />
+    <property name="last.edited.regexp" value="Sample Text" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/TOO-Hub/src/main/java/com/hanriel/toohub" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\HOME\CODE\JAVA\ReBoot_Plugins\ReBoot_Core\src\com\hanriel\reboot_core\config" />
-      <recent name="C:\DATA\CODE\Java\Plugins\ReBoot_Plugins\ReBoot_Tech\src\com\skyandforest\reboot_tech\util" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.skyandforest.reboot_tech" />
-      <recent name="com.skyandforest.reboot_core.exception" />
-      <recent name="com.skyandforest.reboot_economy.config" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.hanriel.toohub" />
+      <recent name="com.hanriel.toohub.User" />
+      <recent name="com.hanriel.theobsidianorder.command" />
       <recent name="com.skyandforest.reboot_tech.command" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TOO-Hub/src/main/java/com/hanriel/toohub" />
+      <recent name="$PROJECT_DIR$/The Obsidian Order/src/main/resources" />
+      <recent name="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder" />
+      <recent name="$PROJECT_DIR$/The Obsidian Order/src/main/java/com/hanriel/theobsidianorder/command" />
+      <recent name="C:\HOME\CODE\JAVA\ReBoot_Plugins\ReBoot_Core\src\com\hanriel\reboot_core\config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TOO-Hub/src/main/java/com/hanriel/toohub" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hanriel.toohub" />
+      <recent name="com.hanriel.tootitlemanager" />
+      <recent name="com.hanriel.toohub.exception" />
+      <recent name="com.hanriel.theobsidianorder.config" />
+      <recent name="com.hanriel.theobsidianorder" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration name="StartSrv" type="JarApplication">
-      <option name="JAR_PATH" value="T:/SERVERS/PT/spigot-1.14.4.jar" />
-      <option name="VM_PARAMETERS" value="-Xmx1024M -Dfile.encoding=CP866" />
-      <option name="PROGRAM_PARAMETERS" value="nogui" />
-      <option name="WORKING_DIRECTORY" value="T:\SERVERS\PT" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+  <component name="RunManager" selected="Maven.TOO-Hub build">
+    <configuration name="com.hanriel.toohub in TOO-Hub" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TOO-Hub" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hanriel.toohub.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hanriel.toohub" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="ReBoot_Core:jar" />
-          <artifact name="ReBoot_Eco:jar" />
-          <artifact name="ReBoot_Shop:jar" />
-          <artifact name="ReBoot_Tech:jar" />
-        </option>
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestServer" type="JarApplication">
+      <target name="dfnil@192.168.0.2:22" />
+      <option name="JAR_PATH" value="/Volumes/srv/too-test/spigot.jar" />
+      <option name="VM_PARAMETERS" value="-Xmx1024M -Dfile.encoding=CP866" />
+      <option name="PROGRAM_PARAMETERS" value="nogui" />
+      <option name="WORKING_DIRECTORY" value="/Volumes/srv/too-test/" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/The Obsidian Order/pom.xml" goal="install" />
+      </method>
+    </configuration>
+    <configuration name="TOO-Hub build" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings">
+          <MavenGeneralSettings>
+            <option name="alwaysUpdateSnapshots" value="false" />
+            <option name="checksumPolicy" value="NOT_SET" />
+            <option name="failureBehavior" value="NOT_SET" />
+            <option name="localRepository" value="" />
+            <option name="mavenHome" value="Bundled (Maven 3)" />
+            <option name="nonRecursive" value="false" />
+            <option name="outputLevel" value="INFO" />
+            <option name="pluginUpdatePolicy" value="DEFAULT" />
+            <option name="printErrorStackTraces" value="false" />
+            <option name="showDialogWithAdvancedSettings" value="false" />
+            <option name="threads" />
+            <option name="usePluginRegistry" value="false" />
+            <option name="userSettingsFile" value="" />
+            <option name="workOffline" value="false" />
+          </MavenGeneralSettings>
+        </option>
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="package" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/TOO-Hub" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="TOO-TitleManager build" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings">
+          <MavenGeneralSettings>
+            <option name="alwaysUpdateSnapshots" value="false" />
+            <option name="checksumPolicy" value="NOT_SET" />
+            <option name="failureBehavior" value="NOT_SET" />
+            <option name="localRepository" value="" />
+            <option name="mavenHome" value="Bundled (Maven 3)" />
+            <option name="nonRecursive" value="false" />
+            <option name="outputLevel" value="INFO" />
+            <option name="pluginUpdatePolicy" value="DEFAULT" />
+            <option name="printErrorStackTraces" value="false" />
+            <option name="showDialogWithAdvancedSettings" value="false" />
+            <option name="threads" />
+            <option name="usePluginRegistry" value="false" />
+            <option name="userSettingsFile" value="" />
+            <option name="workOffline" value="false" />
+          </MavenGeneralSettings>
+        </option>
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="package" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/TOO-TitleManager" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="The Obsidian Order build" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings">
+          <MavenGeneralSettings>
+            <option name="alwaysUpdateSnapshots" value="false" />
+            <option name="checksumPolicy" value="NOT_SET" />
+            <option name="failureBehavior" value="NOT_SET" />
+            <option name="localRepository" value="" />
+            <option name="mavenHome" value="Bundled (Maven 3)" />
+            <option name="nonRecursive" value="false" />
+            <option name="outputLevel" value="INFO" />
+            <option name="pluginUpdatePolicy" value="DEFAULT" />
+            <option name="printErrorStackTraces" value="false" />
+            <option name="showDialogWithAdvancedSettings" value="false" />
+            <option name="threads" />
+            <option name="usePluginRegistry" value="false" />
+            <option name="userSettingsFile" value="" />
+            <option name="workOffline" value="false" />
+          </MavenGeneralSettings>
+        </option>
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="package" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/The Obsidian Order" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JAR Application.TestServer" />
+      <item itemvalue="JUnit.com.hanriel.toohub in TOO-Hub" />
+      <item itemvalue="Maven.TOO-Hub build" />
+      <item itemvalue="Maven.The Obsidian Order build" />
+      <item itemvalue="Maven.TOO-TitleManager build" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.com.hanriel.toohub in TOO-Hub" />
+      </list>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -140,56 +472,76 @@
       <workItem from="1589300566418" duration="4088000" />
       <workItem from="1589382047175" duration="5088000" />
       <workItem from="1589469248190" duration="10105000" />
+      <workItem from="1621540257746" duration="6508000" />
+      <workItem from="1623086763991" duration="9701000" />
+      <workItem from="1623180849518" duration="2037000" />
+      <workItem from="1624388258313" duration="3645000" />
+      <workItem from="1624979070110" duration="14052000" />
+      <workItem from="1625389962039" duration="19433000" />
+      <workItem from="1625422028492" duration="2066000" />
+      <workItem from="1625484348336" duration="141000" />
+      <workItem from="1625666478400" duration="4767000" />
+      <workItem from="1625902968559" duration="1755000" />
+      <workItem from="1625913952554" duration="20573000" />
+      <workItem from="1626281512092" duration="12026000" />
+      <workItem from="1626333876039" duration="828000" />
+      <workItem from="1626334951319" duration="47000" />
+      <workItem from="1626335012543" duration="304000" />
+      <workItem from="1626335330827" duration="35000" />
+      <workItem from="1626335377974" duration="50000" />
+      <workItem from="1626335439998" duration="7000" />
+      <workItem from="1626335459200" duration="1060000" />
+      <workItem from="1626343080876" duration="4306000" />
+      <workItem from="1626516280193" duration="24733000" />
+      <workItem from="1626547829560" duration="8739000" />
+      <workItem from="1626591108454" duration="632000" />
+      <workItem from="1626627250495" duration="1249000" />
+      <workItem from="1626722164661" duration="3399000" />
+      <workItem from="1626863683064" duration="1226000" />
+      <workItem from="1626928648098" duration="3285000" />
+      <workItem from="1627055883311" duration="6000" />
+      <workItem from="1627148204946" duration="2574000" />
+      <workItem from="1627389058845" duration="612000" />
+      <workItem from="1627500021880" duration="42000" />
+      <workItem from="1627500105218" duration="1584000" />
+      <workItem from="1627671092458" duration="103000" />
+      <workItem from="1629734551537" duration="827000" />
+      <workItem from="1629736006419" duration="4281000" />
+      <workItem from="1630140733295" duration="665000" />
+      <workItem from="1630217174458" duration="482000" />
+      <workItem from="1630701981471" duration="3456000" />
+      <workItem from="1630801726942" duration="7898000" />
+      <workItem from="1636096218882" duration="670000" />
+      <workItem from="1636174581474" duration="328000" />
+      <workItem from="1636833454548" duration="66000" />
+      <workItem from="1636833572635" duration="1210000" />
+      <workItem from="1636834851388" duration="1268000" />
+      <workItem from="1636836896459" duration="10597000" />
+      <workItem from="1637401377122" duration="637000" />
+      <workItem from="1637509942136" duration="8514000" />
+      <workItem from="1638037380243" duration="8294000" />
+      <workItem from="1638049103097" duration="579000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
   </component>
-  <component name="WindowStateProjectService">
-    <state x="-1219" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589475126216">
-      <screen x="-1600" y="0" width="1600" height="870" />
-    </state>
-    <state x="-1219" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589475126216" />
-    <state x="666" y="266" key="FileChooserDialogImpl" timestamp="1589213531662">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="666" y="266" key="FileChooserDialogImpl/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589213531662" />
-    <state width="1877" height="146" key="GridCell.Tab.0.bottom" timestamp="1589482174513">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="146" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589482174513" />
-    <state width="1877" height="146" key="GridCell.Tab.0.center" timestamp="1589482174512">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="146" key="GridCell.Tab.0.center/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589482174512" />
-    <state width="1877" height="146" key="GridCell.Tab.0.left" timestamp="1589482174510">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="146" key="GridCell.Tab.0.left/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589482174510" />
-    <state width="1877" height="146" key="GridCell.Tab.0.right" timestamp="1589482174513">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="146" key="GridCell.Tab.0.right/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589482174513" />
-    <state x="230" y="112" key="SettingsEditor" timestamp="1589387156953">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="230" y="112" key="SettingsEditor/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589387156953" />
-    <state x="454" y="429" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1589213605301">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="454" y="429" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589213605301" />
-    <state x="616" y="243" key="run.anything.popup" timestamp="1589216586724">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589216586724" />
-  </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.bukkit.event.EventException" package="org.bukkit.event" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="JarApplication">
         <watch expression="((CraftItemStack)item).handle" custom="org.bukkit.craftbukkit.v1_12_R1.inventory.CraftItemStack" />

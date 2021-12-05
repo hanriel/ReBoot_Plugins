@@ -5,61 +5,66 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToMessageDecoder;
 
 import java.lang.reflect.Field;
-import java.util.Collection;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 
-import net.minecraft.server.v1_14_R1.Packet;
+import net.minecraft.server.v1_16_R3.EntityPlayer;
+import net.minecraft.server.v1_16_R3.Packet;
 import org.bukkit.Bukkit;
-import org.bukkit.craftbukkit.v1_14_R1.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_16_R3.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 
 public class PacketReader {
 
-    Player player;
     Channel channel;
+    public static Map<UUID, Channel> channels = new HashMap<UUID, Channel>();
 
-    public PacketReader(Player player) {
-        this.player = player;
+    public void inject(Player player){
+        CraftPlayer craftPlayer = (CraftPlayer) player;
+        channel = craftPlayer.getHandle().playerConnection.networkManager.channel;
+        channels.put(player.getUniqueId(), channel);
+
+        if(channel.pipeline().get("PacketInjector") != null)
+            return;
+
+        channel.pipeline().addAfter("decoder", "PacketInjector", new MessageToMessageDecoder<Packet<?>>() {
+            @Override protected void decode(ChannelHandlerContext arg0, Packet<?> packet, List<Object> arg2) throws Exception {
+                arg2.add(packet);
+                readPacket(player, packet);
+            }
+        });
     }
 
-    public void inject(){
-        CraftPlayer cPlayer = (CraftPlayer)this.player;
-        channel = cPlayer.getHandle().playerConnection.networkManager.channel;
-        channel.pipeline().addAfter("decoder", "PacketInjector", new MessageToMessageDecoder<Packet<?>>() {@Override protected void decode(ChannelHandlerContext arg0, Packet<?> packet, List<Object> arg2) throws Exception {arg2.add(packet);readPacket(packet);}});
-    }
-
-    public void uninject(){
-        if(channel.pipeline().get("PacketInjector") != null){
+    public void uninject(Player player){
+        channel = channels.get(player.getUniqueId());
+        if(channel.pipeline().get("PacketInjector") != null)
             channel.pipeline().remove("PacketInjector");
-        }
     }
 
-
-    public void readPacket(Packet<?> packet){
+    public void readPacket(Player player, Packet<?> packet){
         if(packet.getClass().getSimpleName().equalsIgnoreCase("PacketPlayInUseEntity")){
-            int id = (Integer)getValue(packet, "a");
-            Collection<Player> pl = Bukkit.getWorld("world").getEntitiesByClass(Player.class);
-            Player p = Bukkit.getPlayer("CreeperMenn");
 
-            for(Player pl2 : pl) if(pl2.getEntityId() == id && pl2.getUniqueId() == UUID.fromString("00000000-0000-0000-0000-000000000001")) p = pl2.getPlayer();
+            if(getValue(packet, "action").toString().equalsIgnoreCase("ATTACK"))
+                return;
+            if(getValue(packet, "d").toString().equalsIgnoreCase("OFF_HAND"))
+                return;
+            if(getValue(packet, "action").toString().equalsIgnoreCase("INTERACT_AT"))
+                return;
 
-            System.out.println(getValue(packet, "action").toString());
-            System.out.println(id);
-            //System.out.println(NPC.npcs.get(1).getId());
-            System.out.println("КОЛ_ВО: " + Bukkit.getWorld("world").getEntities().size());
+            int id = (int)getValue(packet, "a");
 
-
-            if(p.getDisplayName() == "123"){
-                System.out.println("ТУТ НАЧАЛО");
-                if(getValue(packet, "action").toString().equalsIgnoreCase("ATTACK")){
-                    System.out.println("ТУТ БЬЮТ");
-                    NPC.npc.animation(1);
-                }else if(getValue(packet, "action").toString().equalsIgnoreCase("INTERACT")){
-                    System.out.println("ТУТ ТЫКАЮТ");
-                    player.openInventory(player.getEnderChest());
+            if(getValue(packet, "action").toString().equalsIgnoreCase("INTERACT")) {
+                for(EntityPlayer npc : DefNPC.getNPCs()){
+                    if(npc.getId() == id){
+                        Bukkit.getScheduler().scheduleSyncDelayedTask(NPC.getInstance(), new Runnable() {
+                            @Override
+                            public void run() {
+                                Bukkit.getPluginManager().callEvent(new RightClickNPC(player, npc));
+                            }
+                        }, 0);
+                    }
                 }
             }
+
 
         }
     }

@@ -2,7 +2,6 @@ package com.hanriel.reboot_economy;
 
 import com.hanriel.reboot_core.command.CommandFramework;
 import com.hanriel.reboot_core.Core;
-import com.hanriel.reboot_core.util.Utils;
 import com.hanriel.reboot_economy.command.*;
 import com.hanriel.reboot_economy.config.*;
 import com.hanriel.reboot_economy.config.YAML.PluginConfig;
@@ -37,7 +36,6 @@ public class Eco extends JavaPlugin {
         CommandFramework.register(this, new PayCommandHandler("pay"));
 
         //Eco.getInstance().getServer().getPluginManager().registerEvents(new BreakBlockListener(), instance);
-
         load();
     }
 
@@ -63,71 +61,25 @@ public class Eco extends JavaPlugin {
         }
     }
 
-    public static void addBalance(Player player, long amount) {
-        setBalance(player, getBalance(player) + amount);
+    public static long getBalance(Player player) {
+        return player.getMetadata("c").get(0).asLong();
     }
 
     public static void setBalance(Player player, long amount) {
         player.setMetadata("c", new FixedMetadataValue(Core.getInstance(), amount));
     }
 
-//    public static long[] getBalance(Player p) {
-//        long[] i = new long[3];
-//        i[0] = p.getMetadata("c").get(0).asLong();
-//        i[2] = i[0] / 10000;
-//        i[1] = i[0] / 100 % 100;
-//        i[0] %= 100;
-//        return i;
-//    }
-
-    public static long getBalance(Player player) {
-        return player.getMetadata("c").get(0).asLong();
+    public static void addBalance(Player player, long amount) {
+        setBalance(player, getBalance(player) + amount);
     }
 
-//    public static long[] normBalance(long[] a) {
-//        long[] i = new long[3];
-//        i[0] = a[0] + toCopper("s", a[1]) + toCopper("g", a[2]);
-//        i[2] = i[0] / 10000;
-//        i[1] = i[0] / 100 % 100;
-//        i[0] %= 100;
-//        return i;
-//    }
-
-    public static long[] normBalance(long balance) {
-        long[] i = new long[3];
-        i[0] = balance;
-        i[2] = i[0] / 10000;
-        i[1] = i[0] / 100 % 100;
-        i[0] %= 100;
-        return i;
+    public static boolean hasBalance(Player player, long amount) {
+        return amount <= getBalance(player);
     }
-
-    public static long toCopper(String cur, long amount) {
-        if (cur.charAt(0) == 's') return amount * 100;
-        if (cur.charAt(0) == 'g') return amount * 10000;
-        return amount;
-    }
-
-    public static boolean hasBalance(Player player, String cur, long amount) {
-        long i = player.getMetadata("c").get(0).asLong();
-        long am = toCopper(cur, amount);
-        return am <= i;
-    }
-
-//    public static String formatBalance(long[] amount){
-//        return "&6" + amount[0] + " C &7" + amount[1] + " S &e" + amount[2] + " G";
-//    }
 
     public static String formatBalance(long balance){
-        long[] amount = normBalance(balance);
-        return "&6" + amount[0] + " C &7" + amount[1] + " S &e" + amount[2] + " G";
+        return "&6" + balance + " Люф";
     }
-
-//
-//    public static Lang getLang() {
-//        return lang;
-//    }
-//
 
     public static Eco getInstance() {
         return instance;

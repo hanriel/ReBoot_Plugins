@@ -47,10 +47,10 @@ public class EconomyBridge {
 //		return economy.getBalance(player.getName(), player.getWorld().getName());
 //	}
 
-	public static boolean hasMoney(Player player, double minimum) {
+	public static boolean hasMoney(Player player, long minimum) {
 		if (!hasValidEconomy()) throw new IllegalStateException("Economy plugin was not found!");
 		if (minimum < 0.0) throw new IllegalArgumentException("Invalid amount of money: " + minimum);
-		return economy.hasBalance(player, "copper", (long) minimum);
+		return economy.hasBalance(player,  minimum);
 	}
 
 	/**
@@ -59,7 +59,6 @@ public class EconomyBridge {
 	public static void takeMoney(Player player, long amount) {
 		if (!hasValidEconomy()) throw new IllegalStateException("Economy plugin was not found!");
 		if (amount < 0) throw new IllegalArgumentException("Invalid amount of money: " + amount);
-
 		economy.addBalance(player, -amount);
 	}
 

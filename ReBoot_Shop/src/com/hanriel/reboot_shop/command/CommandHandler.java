@@ -80,10 +80,8 @@ public class CommandHandler extends CommandFramework implements Listener {
             long cost = 0;
 
             switch (args.length) {
-                case 4:
-                    cost += Eco.toCopper("s", Long.parseLong(args[3]));
                 case 3:
-                    cost += Eco.toCopper("s", Long.parseLong(args[2]));
+                    cost += Long.parseLong(args[2]);
                     break;
             }
 
@@ -188,9 +186,6 @@ public class CommandHandler extends CommandFramework implements Listener {
     }
 
     private void confirmPay(Player player, ItemStack item) {
-
-
-
         ShopMenu menu = new ShopMenu("ConfPay", 27, event -> {
             event.setWillDestroy(true);
             event.setWillClose(true);
@@ -200,20 +195,12 @@ public class CommandHandler extends CommandFramework implements Listener {
                 event.setWillDestroy(true);
 
                 String lore = item.getItemMeta().getLore().get(item.getItemMeta().getLore().size() - 4);
-                String[] cost = lore.split(" ");
+                String[] lor = lore.split(" ");
                 String targ = item.getItemMeta().getLore().get(item.getItemMeta().getLore().size() - 3);
                 String[] tar = targ.split(" ");
                 Player target = Bukkit.getPlayerExact(tar[tar.length-1].substring(2));
 
-                long[] costArray = new long[3];
-                costArray[0] = Long.parseLong(cost[0].substring(2));
-                costArray[1] = Long.parseLong(cost[2].substring(2));
-                costArray[2] = Long.parseLong(cost[4].substring(2));
-
-                costArray[1] = Eco.toCopper("s", costArray[1]);
-                costArray[2] = Eco.toCopper("g", costArray[2]);
-
-                long price = costArray[0] + costArray[1] + costArray[2];
+                long price = Long.parseLong(lor[0].substring(2));
                 doPayment(event.getPlayer(), price, item, target);
 
             } else if ((pos >= 6 && pos <= 8) || (pos >= 15 && pos <= 17) || (pos >= 24 && pos <= 26)) {
@@ -257,7 +244,7 @@ public class CommandHandler extends CommandFramework implements Listener {
     }
 
     private void doPayment(Player player, long price, ItemStack item, Player target) {
-        if (Eco.hasBalance(player, "c", price)) {
+        if (Eco.hasBalance(player, price)) {
             if (player.getInventory().firstEmpty() != -1) {
                 ItemStack paItem = item;
                 ItemMeta iMeta = paItem.getItemMeta();
@@ -280,7 +267,7 @@ public class CommandHandler extends CommandFramework implements Listener {
                 player.sendMessage(Shop.getLang().no_slots);
             }
         } else {
-            player.sendMessage("No money!");
+            player.sendMessage("Недостаточно Люфов");
         }
     }
 
@@ -289,7 +276,7 @@ public class CommandHandler extends CommandFramework implements Listener {
         BannerMeta m = (BannerMeta) item.getItemMeta();
         m.setDisplayName(Utils.addColors("&3<---"));
         List<String> lore = new ArrayList<>();
-        lore.add(Utils.addColors("&6Previous page"));
+        lore.add(Utils.addColors("&6Предыдущая страница"));
         m.setLore(lore);
         m.addItemFlags(ItemFlag.HIDE_POTION_EFFECTS);
 
@@ -311,7 +298,7 @@ public class CommandHandler extends CommandFramework implements Listener {
         BannerMeta m = (BannerMeta) item.getItemMeta();
         m.setDisplayName(Utils.addColors("&3--->"));
         List<String> lore = new ArrayList<>();
-        lore.add(Utils.addColors("&6Next page"));
+        lore.add(Utils.addColors("&6Следующая страница"));
         m.setLore(lore);
         m.addItemFlags(ItemFlag.HIDE_POTION_EFFECTS);
 
@@ -331,7 +318,7 @@ public class CommandHandler extends CommandFramework implements Listener {
     private ItemStack getISort() {
         ItemStack item = new ItemStack(Material.WHITE_BANNER, 1, (short) 15);
         BannerMeta m = (BannerMeta) item.getItemMeta();
-        m.setDisplayName(Utils.addColors("&3Sort"));
+        m.setDisplayName(Utils.addColors("&3Сортировать"));
         List<String> lore = new ArrayList<>();
         lore.add(Utils.addColors("&6Sorting shop by:"));
         lore.add(Utils.addColors("&a - Date"));
@@ -353,7 +340,7 @@ public class CommandHandler extends CommandFramework implements Listener {
     private ItemStack getIDeny() {
         ItemStack item = new ItemStack(Material.RED_STAINED_GLASS_PANE, 1);
         ItemMeta imDeny = item.getItemMeta();
-        imDeny.setDisplayName(Utils.addColors("&4Deny"));
+        imDeny.setDisplayName(Utils.addColors("&4Отменить"));
         item.setItemMeta(imDeny);
         return item;
     }
@@ -361,7 +348,7 @@ public class CommandHandler extends CommandFramework implements Listener {
     private ItemStack getIAccept() {
         ItemStack item = new ItemStack(Material.GREEN_STAINED_GLASS_PANE, 1);
         ItemMeta imAccept = item.getItemMeta();
-        imAccept.setDisplayName(Utils.addColors("&aAccept"));
+        imAccept.setDisplayName(Utils.addColors("&aПринять"));
         item.setItemMeta(imAccept);
         return item;
     }

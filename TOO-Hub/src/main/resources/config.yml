@@ -1,0 +1,30 @@
+#===============================================
+# TOO Servers Config version: ${project.version}
+#===============================================
+data_base:
+  host: 'localhost'
+  port: '3306'
+  user: 'root'
+  password: 'fortnox2014!'
+  base: 'too'
+  autoReconnect: true
+stats:
+  enable: true
+  db_table: 'too_stats'
+tab:
+  #%player_ping%    Пинг игрока
+  #%server_tps_1%   Тпс сервера
+  #%server_online%  Онлайн сервера
+  #%pd%             Наиграно дней
+  #%ph%             Наиграно часов
+  #%pm%             Наиграно минут
+  header:
+    - ''
+    - '&6&lThe &5&lObsdian &6&lOrder'
+    - '&d&lРежим: &e&lМЕЖДУМИРЬЕ'
+    - ''
+  footer:
+    - ''
+    - '&7Ping: &a%player_ping%ms &6| &7TPS: &a%server_tps_1% &6| &7Онлайн: &a%server_online%'
+    #- '&7Наиграно: &9%pd%&7д &9%ph%&7ч &9%pm%&7мин'
+    - '&7Посетите наш сайт &eobsidianorder.ru'
