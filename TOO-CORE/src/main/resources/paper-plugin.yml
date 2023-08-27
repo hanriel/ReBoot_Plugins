@@ -1,0 +1,9 @@
+name: TOO-CORE
+version: '${version}'
+main: org.hanriel.toocore.TOO_CORE
+api-version: '1.20'
+load: POSTWORLD
+commands:
+  core:
+    description: TOO core info.
+    usage: /<command> [help [admin],reload]

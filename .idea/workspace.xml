@@ -5,6 +5,9 @@
       <artifact name="ReBoot_Eco:jar" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6826b572-8839-46b8-8a6f-ee669dbe8379" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -23,8 +26,25 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/TOO-CORE">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="D:\CODE\TheObsidianOrder\TOO-CORE">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -36,6 +56,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="1PgNlKC8eA9pyfsJrrYudlDFUec" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,32 +69,30 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mariadb" />
-    <property name="Downloaded.Files.Path.Enabled" value="true" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/Projects/Code/Java/ReBoot_Plugins/ReBoot_Eco/src/com/skyandforest/reboot_economy/command/EcoCommandHandler.java" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ReBoot_Core/src/com/hanriel/reboot_core/config" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/CODE/TheObsidianOrder/TOO-CORE/src/main/java/org/hanriel/toocore&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.38070628&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;jdk.preference.com.intellij.ui.dsl.builder.impl.RowImpl.sdk&quot;: [
+      &quot;20=C:\\Program Files\\Java\\jdk-20&quot;,
+      &quot;17=C:\\Program Files\\Java\\jdk-17&quot;
+    ]
+  }
+}</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.skyandforest.reboot_tech.command" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CODE\TheObsidianOrder\TOO-CORE\src\main\java\org\hanriel\toocore" />
       <recent name="C:\HOME\CODE\JAVA\ReBoot_Plugins\ReBoot_Core\src\com\hanriel\reboot_core\config" />
       <recent name="C:\DATA\CODE\Java\Plugins\ReBoot_Plugins\ReBoot_Tech\src\com\skyandforest\reboot_tech\util" />
     </key>
@@ -77,11 +101,30 @@
       <recent name="com.skyandforest.reboot_core.exception" />
       <recent name="com.skyandforest.reboot_economy.config" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.skyandforest.reboot_tech.command" />
-    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.TOO-CORE build">
+    <configuration name="TOO-CORE build" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" value="TOO-CORE build" />
+        <option name="externalProjectPath" value="D:\CODE\TheObsidianOrder\TOO-CORE" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="StartSrv" type="JarApplication">
       <option name="JAR_PATH" value="T:/SERVERS/PT/spigot-1.14.4.jar" />
       <option name="VM_PARAMETERS" value="-Xmx1024M -Dfile.encoding=CP866" />
@@ -90,15 +133,15 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <method v="2">
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="ReBoot_Core:jar" />
-          <artifact name="ReBoot_Eco:jar" />
-          <artifact name="ReBoot_Shop:jar" />
-          <artifact name="ReBoot_Tech:jar" />
-        </option>
+        <option name="BuildArtifacts" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.TOO-CORE build" />
+      <item itemvalue="JAR Application.StartSrv" />
+    </list>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -150,44 +193,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="-1219" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589475126216">
-      <screen x="-1600" y="0" width="1600" height="870" />
-    </state>
-    <state x="-1219" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589475126216" />
-    <state x="666" y="266" key="FileChooserDialogImpl" timestamp="1589213531662">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="666" y="266" key="FileChooserDialogImpl/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589213531662" />
-    <state width="1877" height="146" key="GridCell.Tab.0.bottom" timestamp="1589482174513">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="146" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589482174513" />
-    <state width="1877" height="146" key="GridCell.Tab.0.center" timestamp="1589482174512">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="146" key="GridCell.Tab.0.center/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589482174512" />
-    <state width="1877" height="146" key="GridCell.Tab.0.left" timestamp="1589482174510">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="146" key="GridCell.Tab.0.left/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589482174510" />
-    <state width="1877" height="146" key="GridCell.Tab.0.right" timestamp="1589482174513">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="146" key="GridCell.Tab.0.right/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589482174513" />
-    <state x="230" y="112" key="SettingsEditor" timestamp="1589387156953">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="230" y="112" key="SettingsEditor/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589387156953" />
-    <state x="454" y="429" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1589213605301">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="454" y="429" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589213605301" />
-    <state x="616" y="243" key="run.anything.popup" timestamp="1589216586724">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050/-1600.0.1600.870@0.0.1920.1050" timestamp="1589216586724" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/ReBoot_NPC/ReBoot_NPC.iml" filepath="$PROJECT_DIR$/ReBoot_NPC/ReBoot_NPC.iml" />
       <module fileurl="file://$PROJECT_DIR$/ReBoot_Shop/ReBoot_Shop.iml" filepath="$PROJECT_DIR$/ReBoot_Shop/ReBoot_Shop.iml" />
       <module fileurl="file://$PROJECT_DIR$/ReBoot_Tech/ReBoot_Tech.iml" filepath="$PROJECT_DIR$/ReBoot_Tech/ReBoot_Tech.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TOO-CORE.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TOO-CORE.main.iml" />
     </modules>
   </component>
 </project>
